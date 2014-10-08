@@ -8,23 +8,23 @@
 
 ## Clone repo with (submodules) theme and articles
 
-**Clones repo to the folder “frontend”**  
+**Clones repo to the folder "frontend"**  
 `git clone https://github.com/frontendsk/website frontendsk`  
 `cd frontendsk`  
 	
 **Clone submodules to the subfolders by the hexo convention**  
 `npm install` # install hexo packages  
 `cd themes/theme-v3/` # go to the theme  
-`nom install` # install themes packages  
+`npm install` # install themes packages  
 
 <br><br>
 
-## How to run repo in hexo generator
+## Run repo with Hexo
 
 **Install hexo static generator**  
 `npm install -g hexo` # should ask for sudo  
 
-**Run hexo on your localhost:4000**  
+**Run Hexo on your localhost:4000**  
 `hexo server`  
     
 **Generate final static website that is deployed**  
