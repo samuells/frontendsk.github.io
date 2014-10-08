@@ -82,7 +82,7 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: theme-2
+theme: theme-3
 exclude_generator:
 
 # Deployment
