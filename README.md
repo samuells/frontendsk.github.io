@@ -20,6 +20,7 @@
 `npm install` # install hexo packages  
 `cd themes/theme-v3/` # go to the theme  
 `npm install` # install themes packages  
+`cd ../../` # go back to the root
 
 <br><br>
 
