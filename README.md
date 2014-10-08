@@ -10,14 +10,13 @@
     - redakcia
     - obcasnik
 
-## how to clone repo
+## Clone repo with theme and articles
 
-	// clones repo to the folder “frontend”
-	git clone https://github.com/frontendsk/articles frontend
-	cd frontend
+    // clones repo to the folder “frontend”
+    git clone https://github.com/frontendsk/website frontendsk
+    cd frontendsk
 
-	// clone submodules to the subfolders by the hexo convention
-	git submodule add https://github.com/frontendsk/articles source
-	git submodule add https://github.com/frontendsk/theme-3 themes
-
+    // clone submodules to the subfolders by the hexo convention
+    git submodule init
+    git submodule update
 	
