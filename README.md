@@ -13,9 +13,9 @@
 `cd frontendsk`  
 	
 **Clone submodules to the subfolders by the hexo convention**  
-`npm install # install hexo packages`  
-`cd themes/theme-v3/ # go to the theme`  
-`nom install # install themes packages`  
+`npm install` # install hexo packages  
+`cd themes/theme-v3/` # go to the theme  
+`nom install` # install themes packages  
 
 <br><br>
 
