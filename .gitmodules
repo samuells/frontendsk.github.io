@@ -2,5 +2,5 @@
 	path = source
 	url = https://github.com/frontendsk/articles
 [submodule "themes"]
-	path = themes
+	path = themes/theme-3
 	url = https://github.com/frontendsk/theme-3

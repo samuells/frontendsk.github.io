@@ -12,7 +12,7 @@ language: Slovak
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://frontend.sk
 root: /
 permalink: /clanok/:title/
 tag_dir: tags
@@ -82,7 +82,7 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: frontend-theme
+theme: theme-2
 exclude_generator:
 
 # Deployment
