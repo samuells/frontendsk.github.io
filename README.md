@@ -1,8 +1,10 @@
 # FrontEnd website
 
-<br>
----
-<br>
+ - the website is a conventional structure that uses Hexo generator
+ - theme and articles are submodules
+ - file .gitmodules is committed, so there is no need to care about 
+
+<br><br>
 
 ## clone repo with (submodules) theme and articles
 
@@ -15,9 +17,7 @@
 `cd themes/theme-v3/ # go to the theme`  
 `nom install # install themes packages`  
 
-<br>
----
-<br>
+<br><br>
 
 ## how to run repo in hexo generator
 
@@ -33,8 +33,6 @@
 `python -m SimpleHTTPServer 5000 # serving to localhost:5000`  
 
 
-<br>
----
-<br>
+<br><br>
 
 Author: Samuel Ondrek
