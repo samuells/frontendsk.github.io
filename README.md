@@ -11,6 +11,10 @@
 **Clones repo to the folder "frontend"**  
 `git clone https://github.com/frontendsk/website frontendsk`  
 `cd frontendsk`  
+
+**Clone submodules to the subfolders by the hexo convention**  
+`git submodule init` 
+`git submodule update`
 	
 **Clone submodules to the subfolders by the hexo convention**  
 `npm install` # install hexo packages  
