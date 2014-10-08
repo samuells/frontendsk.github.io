@@ -1,8 +1,10 @@
 # FrontEnd website
 
-<br>---<br>
+<br>
+---
+<br>
 
-**clone repo with (submodules) theme and articles**  
+## clone repo with (submodules) theme and articles
 
 **clones repo to the folder “frontend”**  
 `git clone https://github.com/frontendsk/website frontendsk`  
@@ -13,9 +15,11 @@
 `cd themes/theme-v3/ # go to the theme`  
 `nom install # install themes packages`  
 
-<br>---<br>
+<br>
+---
+<br>
 
-**how to run repo in hexo generator**  
+## how to run repo in hexo generator
 
 **install hexo static generator**  
 `npm install -g hexo # should ask for sudo`  
@@ -29,6 +33,8 @@
 `python -m SimpleHTTPServer 5000 # serving to localhost:5000`  
 
 
-<br>---<br>
+<br>
+---
+<br>
 
 Author: Samuel Ondrek
