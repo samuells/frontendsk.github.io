@@ -1,0 +1,108 @@
+// generals
+
+
+    body {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+
+
+// code
+
+
+    pre {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+// links
+
+
+    a:link { /* unvisited link */
+        color: @BRAND_COLOR;
+    }
+
+    a:visited { /* visited link */
+        color: lighten(@BRAND_COLOR, 10%);
+    }
+
+    a:hover { /* mouse over link */
+        color: darken(@BRAND_COLOR, 20%);
+    }
+
+    a:active { /* selected link */
+        color: darken(@BRAND_COLOR, 40%);
+    }
+
+
+// customs
+
+
+    [class="article-title"] {
+
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        color: #282828;
+        text-decoration: none;
+    }
+
+// logo
+
+    [id="logo"] {
+
+        font-family: "Oswald", sans-serif;
+        font-size: 44px;
+        font-weight: 800;
+        -webkit-text-stroke: 1px black;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+
+    }
+
+    [id="logo"]:visited,
+    [id="logo"]:link {
+
+        color: white;
+        text-decoration: none;
+
+    }
+
+    [id="logo"]:hover {
+
+        color: #F0F0F0;
+
+    }
+
+
+
+    [id="page-title"] {
+
+        margin-bottom: 73px;
+        font-size: 50px;
+
+        a {
+            color: rgb(32, 32, 32);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+

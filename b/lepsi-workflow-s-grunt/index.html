@@ -1,0 +1,204 @@
+<!DOCTYPE html><html><head>
+
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>FRONT-END SK</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link rel="shortcut icon" href="favicon.ico?1" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico?1" type="image/x-icon" />
+
+    <meta property="og:title" content="Front-End.sk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
+    <meta property="og:url" content="https://frontend.sk" />
+    <meta property="og:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <meta name="twitter:title" content="Front-End.sk" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
+    <meta name="twitter:url" content="http://frontend.sk" />
+    <meta name="twitter:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+
+
+</head><body>
+
+    <aside id="logo"><a href="https://ondrek.com/blog/">O</a></aside>
+
+    <main>
+    
+
+
+    <h1><a href="">Lepší workflow s Grunt</a></h1>
+    <time>2014-07-14</time>
+
+    <article>
+        <p>Ak sa pohybuješ vo svete front-endu, tak si už pravdepodobne počul niečo o Grunte. Ale ako
+to celé dostať do svojho toolsetu? A prečo vlastne? Toto je intro pre Grunt.</p>
+<!-- more -->
+<p>Či už robíš ďalší malý web alebo makáš na dlhodobejšom projekte, sú veci, ktoré sa v
+dnešnej dobe oplatí robiť. Napríklad nevyvolať kvôli každej ikonke HTTP request. Neposielať
+každú jednu medzeru v Javascriptoch. Používať CSS preprocesor a na webe načítavať už len
+jeden skompilovaný minifikovaný file. Požiadavky narastajú, ale <strong>kto to bude robiť</strong>?
+Grunt to bude robiť. Nižšie nájdeš krátky postup ako ho rozbehať a vytvoríš si svoj prvý
+gruntfile.</p>
+<hr>
+<p><strong>Ja to nepotrebujem...</strong></p>
+<p>Robím iba malé weby... Aj tak to spravím niekedy na konci naraz... Je to príliš
+komplikované... Nie, nie a ešte raz nie.</p>
+<p>Grunt (tak ako aj Gulp) je synonymom pre automatizáciu. Jeden príkaz v command line za teba
+spraví veľa roboty. Odporúčam vyskúšať si na prvom možnom projekte ako takú výzvu. Alebo
+kľudne aj nanečisto ako v tomto článku.</p>
+<hr>
+<p><strong>Chcem to!</strong></p>
+<p>Na nainštalovanie Gruntu budeš potrebovať nainštalovaný Node.js a s ním node package manager
+(npm). Na to slúži veľké zelné tlačidlo <a href="http://nodejs.org/">tu</a>. Máš? <strong>Super</strong>. Môžme ísť na Grunt.</p>
+<p>Aby si mohol používať Grunt z príkazového riadku, nainštaluješ Grunt Command Line Interface
+s prepínačom -g (globálne, pre celý systém), takto:</p>
+<pre><code>&gt; npm install -g grunt-cli
+</code></pre><hr>
+<p><strong>Vzorový projekt: minifikácia CSS</strong></p>
+<p>Skúsme si zautomatizovať niečo jednoduché - ak sa v projekte zmení nejaký CSS súbor, vytvoríme
+minifikované CSS.</p>
+<p>Ako základ si vezmime napríklad html5bp a stiahnime si ho do projektového adresára:</p>
+<pre><code>&gt; git clone https://github.com/h5bp/html5-boilerplate.git gruntproject
+</code></pre><p>OK, 13 MB pre náš miniprojekt máme u seba :) Čo ďalej? Grunt vyžaduje, aby sa v projekte
+nachádzal package.json manifest, ktorý skrátka identifikuje náš nový projekt. Viac si o
+package.json prečítaš <a href="https://www.npmjs.org/doc/json.html">tu</a>.</p>
+<pre><code>&gt; cd gruntproject
+&gt; npm init
+</code></pre><p>NPM (node package manager) si od teba vypýta pár detailov. Vyplníš a v roote sa ti objaví
+súbor package.json. Super. <strong>Konečne môžme ísť na Grunt</strong> :) Ten potrebuje v root adresári
+ďalší súbor, tentokrát Gruntfile.js. Píšeme ručne. Je dobré sa inšpirovať na stránkach tohto
+šikovného <a href="http://gruntjs.com/sample-gruntfile">toolu</a>. Náš nový gruntfile zatiaľ vyzerá nejak takto:</p>
+<pre><code>module.exports = function(grunt) {
+  grunt.initConfig({
+    pkg: grunt.file.readJSON(&#39;package.json&#39;)
+  });
+};
+</code></pre><p>Než niečo začneme robiť, musíme pridať do projektu lokálny Grunt modul príkazom:</p>
+<pre><code>&gt; npm install grunt --save-dev
+</code></pre><p>Náš package.json je bohatší o riadok s novou dependenciou - grunt. Overíme:</p>
+<pre><code>&gt; grunt --help
+</code></pre><p>Ak sa ti z toho začína točiť hlava, tak vedz, že teraz to začne byť zaujímavé:)</p>
+<hr>
+<p><strong>Pridávame do projektu Grunt moduly</strong></p>
+<p>Dostali sme sa po nainštalovanie grunt modulu do nášho nového projektu. Povedali sme si,
+že nám teraz pôjde o minifikáciu CSS. Sofistikovaným googlením &quot;grunt minify css&quot; zistíme,
+že na tento task slúži modul grunt-contrib-cssmin. Neváhame a do konzoly búšime (našli sme
+to v časti &quot;Getting started&quot; v repozitári modulu):</p>
+<pre><code>&gt; npm install grunt-contrib-cssmin --save-dev
+</code></pre><p>Ak máme všetko dobre nastavené, zbehne nám inštalácia a... zatial prd z toho. Treba nám
+upraviť Gruntfile! Čítame usage examples v grunt-contrib-cssmin repozitári. Ahá! Potrebujeme
+definovať konfiguráciu pre tasky, ktoré chceme použiť. A loadnuť cssmin modul. Rozširujeme
+náš gruntfile nasledovne:</p>
+<pre><code>module.exports = function(grunt) {
+  grunt.initConfig({
+    pkg: grunt.file.readJSON(&#39;package.json&#39;),
+
+    cssmin: { // konfig pre modul grunt-contrib-cssmin
+      minify: { // konfiguracia minify tasku
+        expand: true,
+        cwd: &#39;css/&#39;,
+        src: [&#39;*.css&#39;, &#39;!*.min.css&#39;],
+        dest: &#39;css/&#39;,
+        ext: &#39;.min.css&#39;
+      }
+    }
+
+  });
+
+  grunt.loadNpmTasks(&#39;grunt-contrib-cssmin&#39;); // loadneme nas modul
+
+};
+</code></pre><p>Neohrozene testujeme náš výtvor:</p>
+<pre><code>&gt; grunt cssmin
+</code></pre><p>A veru! Grunt zobral všetko s príponou .css čo našiel v css/ adresári a zminifikoval. Ešte
+nám aj napísal, koľko cenných kB sme ušetrili. Paráda.</p>
+<p>Možno si to predstavujeme trochu inak a pre našu stránku by sme chceli iba jeden výstupný
+.min.css súbor - treba pozrieť usage example cssmin tasku combine.</p>
+<hr>
+<p><strong>Striehneme na zmeny - watch</strong></p>
+<p>Nebudem to predlžovať, dajme tomu, že .min.css chceme updatovať automaticky po zmene
+niektorého z .css súborov. Na to nám slúži šikovný modul grunt-contrib-watch:</p>
+<pre><code>&gt; npm install grunt-contrib-watch --save-dev
+</code></pre><p>Upravíme gruntfile:</p>
+<pre><code>module.exports = function(grunt) {
+  grunt.initConfig({
+    pkg: grunt.file.readJSON(&#39;package.json&#39;),
+
+    watch: {
+      css: {
+        files: [&#39;css/*.css&#39;, &#39;!*.min.css&#39;],
+        tasks: [&#39;cssmin&#39;]
+      }
+    },
+
+    cssmin: { // konfig pre modul grunt-contrib-cssmin
+      minify: { // konfiguracia minify tasku
+        expand: true,
+        cwd: &#39;css/&#39;,
+        src: [&#39;*.css&#39;, &#39;!*.min.css&#39;],
+        dest: &#39;css/&#39;,
+        ext: &#39;.min.css&#39;
+      }
+    }
+
+  });
+
+  grunt.loadNpmTasks(&#39;grunt-contrib-cssmin&#39;); // loadneme nas modul
+  grunt.loadNpmTasks(&#39;grunt-contrib-watch&#39;);
+
+};
+</code></pre><p>A spustíme task:</p>
+<pre><code>&gt; grunt watch
+</code></pre><p>Ľahko si overíme, že po zmene v .css súbore sa nám pregenerujú minifikované verzie. Hurá!</p>
+<hr>
+<p><strong><em>Rekapitulácia</em></strong></p>
+<p>nainštaluj Grunt - vytvor projekt - pridaj package.json - pridaj Gruntfile (alebo skopíruj
+zo starého projektu) - nainštaluj lokálne grunt modul - nainštaluj ďalšie moduly a uprav
+Gruntfile - spusti task a voilá!</p>
+<p>Nabudúce môžme skúsiť kompilovanie SASSu, css sprites či livereload. Alebo také source maps.</p>
+<hr>
+<p><strong>Záverom</strong></p>
+<p>Je teraz z teba lepší web developer? Ťažko. Zbavil si sa ďalšej repetitívnej činnosti,
+ktorá ťa nebavila a púšťaš z pod rúk kvalitnejší výsledok? Hopefully yes.</p>
+<p>Poznámky a pripomienky, návrhy, zdrby - <a href="http://twitter.com/andrejminarik">porozprávajme sa</a> :)</p>
+<p>Autor: <a href="http://twitter.com/andrejminarik">@andrejminarik</a></p>
+
+    </article>
+
+
+
+    </main>
+
+
+    <footer id="footer">
+
+        <a target="_blank" rel="nofollow" href="#">chcete písať?</a>,
+        <a target="_blank" rel="nofollow" href="#">o autoroch</a>,
+        <a target="_blank" rel="nofollow" href="#">pre média</a>,
+        <a target="_blank" rel="nofollow" href="https://github.com/frontendsk/frontendsk.github.io">git repo</a>,
+        <a target="_blank" rel="nofollow" href="/humans.txt">humans.txt</a>,
+        <a target="_blank" rel="nofollow" href="#">a11y manifest</a>
+
+        <br/>
+
+        &copy; 2015
+        theme designed &amp; handcrafted by samuel ondrek ;o)<br/>
+
+
+    </footer>
+
+
+</body></html>
+
+</body></html>

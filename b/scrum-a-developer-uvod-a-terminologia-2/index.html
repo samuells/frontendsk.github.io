@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head>
+
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>FRONT-END SK</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link rel="shortcut icon" href="favicon.ico?1" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico?1" type="image/x-icon" />
+
+    <meta property="og:title" content="Front-End.sk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
+    <meta property="og:url" content="https://frontend.sk" />
+    <meta property="og:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <meta name="twitter:title" content="Front-End.sk" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
+    <meta name="twitter:url" content="http://frontend.sk" />
+    <meta name="twitter:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+
+
+</head><body>
+
+    <aside id="logo"><a href="https://ondrek.com/blog/">O</a></aside>
+
+    <main>
+    
+
+
+    <h1><a href="">Scrum a Developer - Pred (prvým) Sprintom (2/5)</a></h1>
+    <time>2014-07-18</time>
+
+    <article>
+        <p>V pokračovaní seriálu si ukážeme, čo treba spraviť pred každým Sprintom. Ako urobiť estimation
+jednotlivých User Stories, čo je povinnosťou Product Ownera a čo developerov..</p>
+<!-- more -->
+<hr>
+<p><strong>User Stories</strong></p>
+<p>Ako prvý krok musíme celý projekt (alebo aspoň subčasť, ktorú chceme robiť najbližší mesiac)
+rozbiť na malé User Stories. Každá z nich musí mať jasný popis a prípadne prílohy či screenshoty.</p>
+<p>Každá User Story musí byť v časovom rozmedzí od pár hodín do jedného dňa (samozrejme, vytvoriť
+takéto striktné pravidlo je nezmysel a neskôr si poupravujete Scrum do podoby ktorá vám sedí
+najviac). Ak však trvajú User Stories dlhšie ako dva dni, niečo robíte zle.</p>
+<p><img src="http://bit.ly/1pHYW2D" alt=""></p>
+<p>V User Story <small>(zjednodušme tento pojem a nazvime teraz User Stories všetko od bugov, features
+až po changes vo funkcionalite systému)</small> musíme jasne popísať problém, aby každý developer
+mohol pracovať samostatne bez ďalšej komunikácie.</p>
+<p>Napríklad v prípade bugu musíme popísať browser, OS, device, priložiť screenshot a postup ako
+zreprodukovať znova bug. V prípade nového tasku musíme priložiť design, funkcionalitu a čo považujeme
+za hotový task.</p>
+<hr>
+<p><strong>Priority Backlog a Product Owner</strong></p>
+<p>Následnou úlohou Product Ownera je usporiadať všetky User Stories podľa priority. Keď prijíme nový
+task alebo bug od zákazníka, musí sa rozhodnúť kam ho zaradiť. Možno je to vážny bug a mal by ísť dopredu.
+Možno je to low priority feature a mala by ísť na koniec.</p>
+<p>Product Owner popíše podrobne problém a vytvorí task, aby bol nutný čo najmenší zásah developera do
+akejkoľvek administrácie či komunikácie. Ak sa zákazník rozhodne, že už nechce skákajúce korytnačky
+<a href="http://bit.ly/1pHZmWG">[*]</a> na webstránke, môže rovnako z Priority Backlog odstrániť jednotlivé User
+Stories.</p>
+<p><img src="http://bit.ly/1pHYmSp" alt=""></p>
+<p>Zjednodušene povedané. Úloha Product Ownera je prijímať všetky podnety na development, aby netravovali
+developerov, a usporiadavať ich v Priority Backlogu. Product Owner nevie povedať, kedy budú hotové
+jednotlivé tasky. Vie len povedať, v akom poradí sa vykonajú.</p>
+<hr>
+<p><strong>Effort Estimation a Story Points</strong></p>
+<p>Pred začiakom každého Sprintu musia relevatní developeri odhadnúť pracnosť jednotlivých User Stories.
+Pre najobjektívnejší odhad je najlepšie použiť Planning Poker <a href="http://bit.ly/1pfsl0g">[*]</a>, aby sme
+zabránili &quot;odpisovaniu&quot;.</p>
+<p>Pokiaľ nemáte Planning Poker, proste vytlačte kartičky s hodnotami &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;5&quot;, &quot;8&quot;, &quot;13&quot;, &quot;20&quot;,
+&quot;&gt;20&quot; a nechajte developerov odhadnúť pracnosť. S každým novým Sprintom budú developeri vedieť odhadnúť
+svoje odhady presnejšie a presnejšie.</p>
+<p>Výsledkom tohto Estimation Meetingu by mal byť Priority Backlog s tými istými taskami, v tom istom
+poradí, akurát s vyplnenou kolónkou Story Points. Túto činnosť netreba robiť pre všetky User Stories.
+Stačí jeden Sprint dopredu, nakoľko tasky sa môžu pomeniť, priority tiež alebo môžu úplne zmiznúť z
+Priority Backlogu.</p>
+<hr>
+<p><strong>Rekapitulácia</strong></p>
+<p>Čo máme teda hotové? Zákazník, marketingové oddelenie a užívatelia hovoria priamo k Product Ownerovi.
+On na základe ich podnetov vytvorí User Stories a prehľadne do nich popíše problém. Nakoniec ich podľa
+priority usporiada, prípadne preusporiada. Nestará sa, koľko a kedy dokončia developeri. Nestará sa kedy
+budú hotové. Nedáva nikomu žiadny deadline.</p>
+<p>Developeri sa stretnú pred každým Sprintom, zoberú najprioritnejšiu časť taskov a s pomocou čo
+najobjektívnejšej metódy (napríklad s pomocou Planning Poker) sa snažia odhadnúť náročnosť taskou. Každému
+tasku pridelia určitý počet Story Points po vzájomnej zhode a diskusií.</p>
+<p>Každá User Story musí byť v rozmedzí pár hodín až dňa. Pokiaľ je dlhšia, mali by sme ju rozbiť na viaceré
+menšie. Z každej User Story musí byť presne jasné, čo má developer urobiť a kedy sa považuje task za
+hotový a otestovateľný.</p>
+<hr>
+<p><strong>Čo v ďalšom pokračovaní seriálu?</strong></p>
+<p>V ďalšom pokračovaní si ukážeme, ako odhadnúť koľko User Stories sa zmestí do jedného Sprintu. Čo je
+Burndown Chart. Konečne začneme prvý Spring!</p>
+<hr>
+<p>Autor: [<a href="https://twitter.com/ondrek">ondrek</a>].</p>
+
+    </article>
+
+
+
+    </main>
+
+
+    <footer id="footer">
+
+        <a target="_blank" rel="nofollow" href="#">chcete písať?</a>,
+        <a target="_blank" rel="nofollow" href="#">o autoroch</a>,
+        <a target="_blank" rel="nofollow" href="#">pre média</a>,
+        <a target="_blank" rel="nofollow" href="https://github.com/frontendsk/frontendsk.github.io">git repo</a>,
+        <a target="_blank" rel="nofollow" href="/humans.txt">humans.txt</a>,
+        <a target="_blank" rel="nofollow" href="#">a11y manifest</a>
+
+        <br/>
+
+        &copy; 2015
+        theme designed &amp; handcrafted by samuel ondrek ;o)<br/>
+
+
+    </footer>
+
+
+</body></html>
+
+</body></html>

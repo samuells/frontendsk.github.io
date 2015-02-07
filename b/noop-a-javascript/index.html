@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head>
+
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>FRONT-END SK</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link rel="shortcut icon" href="favicon.ico?1" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico?1" type="image/x-icon" />
+
+    <meta property="og:title" content="Front-End.sk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
+    <meta property="og:url" content="https://frontend.sk" />
+    <meta property="og:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <meta name="twitter:title" content="Front-End.sk" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
+    <meta name="twitter:url" content="http://frontend.sk" />
+    <meta name="twitter:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+
+
+</head><body>
+
+    <aside id="logo"><a href="https://ondrek.com/blog/">O</a></aside>
+
+    <main>
+    
+
+
+    <h1><a href="">NOOP a Javascript</a></h1>
+    <time>2014-09-20</time>
+
+    <article>
+        <p>NOOP (alebo No Operation) znamená v programovaní inštrukciu, ktorá robí absolútne nič.
+A práve preto je zaujímavá. Prečo by niekto využíval také inštrukcie a načo je dobré ich poznať?</p>
+<!-- more -->
+<hr>
+<p><strong>Swollorexic sample</strong></p>
+<p>NOOP sa zvyčajne odstráni kompilátorom alebo minifierom v nejakom stepe, ešte pred vykonávaním
+programu. Používa sa v teoretickej informatike a v zložitejších algoritmoch.</p>
+<p>Može to byť napríklad semicolon, ktorý nič neukončuje, volanie prázdnej funkcie alebo setovanie
+properties na JS primitívy ako string, number alebo boolean:</p>
+<pre><code>; // alebo {} alebo &quot;&quot; alebo veľa iných
+emptyFn(); // definovaná ako emptyFn = function(){}
+
+false[&quot;foo&quot;] = &quot;hello&quot;; // lebo primitíva nemôže mať property
+&quot;abc&quot;[&quot;foo&quot;] = &quot;hello&quot;;
+12345[&quot;foo&quot;] = &quot;hello&quot;;
+</code></pre><p>.. aj keď existuje samozrejme mnoho iných príkladov.</p>
+<hr>
+<p><strong>jQuery.noop()</strong></p>
+<p>Aj samotné jQuery má funkciu <code>noop</code>, ktorú môžete použiť, keď potrebujete &quot;pohodiť okolo funkciu,
+ktorá nič nerobí&quot;, ako hovorí oficiálna dokumentácia ([*][1]).</p>
+<p>Predstavili ju kvôli memory leaku pri používaní XMLHttpRequest v starších IEčkach ([*][2]) a neskôr
+sa začala používať interne aj pri <code>ajax</code>, <code>offset</code> alebo <code>modules</code>.</p>
+<hr>
+<p><strong>Na čo sa to používa?</strong></p>
+<p>Používa sa napríklad pri meraní času alebo rôznych performance issues, kedy potrebujeme presne jednu
+inštrukciu, ktorá trvá čo najmenší časový úsek. Napríklad dvojbodka <code>;</code> v prázdnom riadku sa vykoná
+približne <strong>jeden a pol miliardy krát za sekundu</strong>. Okolo 90 miliárd krát za minútu. Následne teda
+vieme porovnávať voči niečomu, čo je naozaj takmer tik procesora.</p>
+<p>NOOP sa používa napríklad aj v polyfille na defaultný <code>bind</code>, ktorý môžete nájsť na stránke MDN ([*][4])
+o <code>Function.prototype.bind</code> .. je nazvaná v terajšej implementácií ako <code>fNOP</code> a implementovaná ako
+<code>fNOP = function () {}</code> ..</p>
+<hr>
+<p>Autor článku je [<a href="https://twitter.com/ondrek">Samuel Ondrek</a>].</p>
+<p> [1] : <a href="https://api.jquery.com/jquery.noop/">https://api.jquery.com/jquery.noop/</a>
+ [2] : <a href="http://www.ilinsky.com/articles/XMLHttpRequest/#bugs-ie-leak">http://www.ilinsky.com/articles/XMLHttpRequest/#bugs-ie-leak</a>
+ [3] : <a href="http://bit.ly/1qTKPYH">http://bit.ly/1qTKPYH</a>
+ [4] : <a href="http://mzl.la/1v2VZZr">http://mzl.la/1v2VZZr</a></p>
+
+    </article>
+
+
+
+    </main>
+
+
+    <footer id="footer">
+
+        <a target="_blank" rel="nofollow" href="#">chcete písať?</a>,
+        <a target="_blank" rel="nofollow" href="#">o autoroch</a>,
+        <a target="_blank" rel="nofollow" href="#">pre média</a>,
+        <a target="_blank" rel="nofollow" href="https://github.com/frontendsk/frontendsk.github.io">git repo</a>,
+        <a target="_blank" rel="nofollow" href="/humans.txt">humans.txt</a>,
+        <a target="_blank" rel="nofollow" href="#">a11y manifest</a>
+
+        <br/>
+
+        &copy; 2015
+        theme designed &amp; handcrafted by samuel ondrek ;o)<br/>
+
+
+    </footer>
+
+
+</body></html>
+
+</body></html>

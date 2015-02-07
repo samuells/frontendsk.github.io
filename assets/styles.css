@@ -1,0 +1,108 @@
+
+    @import url("//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css");
+    @import url("//fonts.googleapis.com/css?family=Oswald:400,700,300&subset=latin,latin-ext");
+    @import url("//fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,latin-ext");
+    @import url("//fonts.googleapis.com/css?family=Inika:400,700");
+    @import url("//fonts.googleapis.com/css?family=Source+Code+Pro");
+
+
+
+	::-moz-selection {
+		background: #91CEE4;
+		color: #FFF;
+	}
+
+	::selection {
+		background: #91CEE4;
+		color: #FFF;
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		text-rendering: optimizeLegibility;
+		font-family: "Karma", "Georgia", "Helvetica", "Cambria", "EversonMono", "EversonMono", "Segoe UI Symbol", "Symbola", "Ubuntu", "Arial", serif;
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 27px;
+		color: #0F121B;
+		padding: 150px 200px 50px;
+		overflow-x: hidden;
+	}
+
+	hr {
+		height: 60px;
+		border: 0;
+	}
+
+	h1 {
+		font-size: 36px;
+		line-height: 29px;
+	}
+
+
+	a {
+		color: #1bac7a;
+		text-decoration: none;
+	}
+
+	a:hover {
+		opacity: 0.4;
+		filter: alpha(opacity=40);
+		transition: all 0.3s linear;
+		-moz-transition: all 0.3s linear;
+		-ms-transition: all 0.3s linear;
+	}
+
+	i { /* yeah, fuck the italic */
+		font-style: normal;
+		color: #1BAC7A;
+	}
+
+	em {
+		font-style: normal;
+		color: #B5B5B5;
+	}
+
+
+	[id="page"] {
+		max-width: 1000px;
+	}
+
+	[id="page"] main > time {
+		margin-bottom: 63px;
+		display: block;
+		font-weight: 300;
+		color: rgb(144, 144, 144);
+	}
+
+
+	[id="page"] footer {
+		margin-top: 300px;
+		font-weight: 300;
+		color: rgb(144, 144, 144);
+	}
+
+	[id="logo"]{
+		position: fixed;
+		top: 0;
+		font-weight: 800;
+		left: 0;
+	}
+
+	[id="logo"] a {
+		color: white;
+		padding-top: 24px;
+		background: #1bac7a;
+		display: block;
+		height: 60px;
+		width: 67px;
+		text-align: center;
+		font-size: 40px;
+	}

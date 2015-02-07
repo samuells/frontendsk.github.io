@@ -1,0 +1,147 @@
+<!DOCTYPE html><html><head>
+
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>FRONT-END SK</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link rel="shortcut icon" href="favicon.ico?1" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico?1" type="image/x-icon" />
+
+    <meta property="og:title" content="Front-End.sk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
+    <meta property="og:url" content="https://frontend.sk" />
+    <meta property="og:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <meta name="twitter:title" content="Front-End.sk" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
+    <meta name="twitter:url" content="http://frontend.sk" />
+    <meta name="twitter:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+
+
+</head><body>
+
+    <aside id="logo"><a href="https://ondrek.com/blog/">O</a></aside>
+
+    <main>
+    
+
+
+    <h1><a href="">Scrum a Developer - Úvod a terminológia (1/5)</a></h1>
+    <time>2014-07-17</time>
+
+    <article>
+        <p>Článok je light úvodom do SCRUMu. Seriál bude mať viac častí a je určený pre ľudí, ktorí
+s ním nemajú skúsenosti alebo nikdy o ňom nepočuli a venuje sa terminológiía hlavným myšlienkam ..</p>
+<!-- more -->
+<hr>
+<p>Poznámka: Naša firma beží na Scrume 2 roky, niečo sme pomenili, nevieme aký je rozdieľ medzi
+agilnou metodikou a agilnou technikou a je nám to úplne jedno. Preto ani v článku nečakajte
+terminológiu ako na Wikipédií.</p>
+<hr>
+<p><strong>Scrum tu neni pre developerov</strong></p>
+<p>Pre ujasnenie: Scrum tu neni pre vás - developerov. Scrum tu je pre managérov, zákazníkov a
+uživateľov. Vy vytvoríte ten istý zdroják za tú istú jednotku času a väčší vplyv na vašu
+produktivitu má už aj druhý monitor, klimatizácia, silná káva a raňajší sex ;)</p>
+<p>Tisícky blogov o IT produktivite sú väčšinou založené na abstraktných faktoch a písané managérmi
+a pseudo-intelektuálmi. Ak chcete merať produktivitu, zoberte 100 študentov, rozdeľte ich na
+2 skupiny a dajte im riešiť rovnaký problém. Jednej agilne a druhej nie. To je exaktná veda
+a nie blogovanie.</p>
+<hr>
+<p><strong>Čo to vlastne ten Scrum je?</strong></p>
+<p>Scrum je ako sex na strednej škole - Každý o tom hovorí, ale nikto to v skutočnosti neskúsil.
+Dá sa povedať, že je to len obyčajný súbor pravidiel o tom:</p>
+<ul>
+<li>ako managovať a meniť priority projektu viac flexibilne</li>
+<li>ako doručovať výsledky v častejších iteráciach</li>
+<li>ako dokopať developerov k práci</li>
+<li>ako lepšie odhadnúť dĺžku projektu</li>
+<li>ako mať prehľad o tom, čo aktuálne kto robí</li>
+</ul>
+<hr>
+<p><strong>Čo sú výhody a čo nevýhody Scrumu</strong></p>
+<p><strong>Nevýhody:</strong> Musíte tráviť viac času na meetingoch (priemerne 5 hodín za dva alebo tri týždne).
+Môžete začať zanedbávať kvalitu kódu a refactoring v snahe doručovať výsledky.</p>
+<p><strong>Výhody:</strong> Viete lepšie odhadnúť dĺžku trvania projektu. Zákazník alebo uživateľ nemusí čakať
+mesiace na čiastočný výsledok a môže korigovať proces. Developerov neotravujú ani zákazníci,
+ani užívatelia, ani managéri - nikdy.</p>
+<p>Nemôžete pracovať nadčasy (pravidlo).</p>
+<hr>
+<p><strong>Terminológia</strong></p>
+<p>V Scrume sa používa niekoľko pojmov pre zúčastnených:</p>
+<ul>
+<li><p>Product Owner <small>( Je osoba, ktorá určuje priority celého projektu a je zodpovedná za to,
+na čom sa ide aktuálne pracovať. Pokiaľ máte zákazníka alebo marketingové oddelenie alebo iných
+ľudí, ktorí vás otravujú - musia ísť za ním a on sa rozhodne či tento bug bude fixnutý alebo kedy
+táto feature bude implementovaná )</small></p>
+</li>
+<li><p>Scrum Master <small>( Je osoba zodpovedná za to, aby ste mohli pracovať v kľude. Stará sa o to,
+aby ste mali funkčný software, hardware, organizuje meetingy - vačšinou je to projekt managér,
+ktorého už aj tak máte vo firme, akurát mu zakážete kecať do vašej práce )</small></p>
+</li>
+<li><p>Developer <small>( Vy musíte iba odhadnúť, koľko asi bude určitý task trvať a samozrejme ho
+naprogramovať, čo je najťažšia časť. Nemusíte sa starať o projekty, o zákazníka, o bug reporty,
+o emaily od marketingových výmyselníkov a grafikov .. )</small></p>
+</li>
+</ul>
+<p>Rovnako máme aj pár pojmov pre priebeh Scrumu:</p>
+<ul>
+<li><p>Sprint <small>( Je jednotka času, ktorú budete opakovať stále dookola s nejakým jasným cieľom.
+Zvyčajne to môžu byť dva alebo tri týždne, za ktoré máte určených napríklad 100 taskov, ktoré
+musí spolu s celým tímom dokončiť )</small></p>
+</li>
+<li><p>Project Backlogu <small>( Je dashboard so všetkými budúcimi taskami, ktoré musíte urobiť, aby
+ste dokončili projekt - všetky reportnuté bugy, všetky features ktoré musíte urobiť, všetky budúce
+časti projektu )</small></p>
+</li>
+<li><p>User Stories <small>( Sú jednotlivé tasky s veľmi jasným popisom čo sa má urobiť, screenshotmi
+bugov, wireframy nápadov, obrázky budúcich designov a podobne. Keď niekto nájde bug, len pridá
+User Story do Project Backlogu )</small></p>
+</li>
+</ul>
+<hr>
+<p><strong>Čo v ďalšom pokračovaní seriálu?</strong></p>
+<p>V ďalšom pokračovaní seriálu si povieme, ako vlastne Scrum prebieha, čo sa od koho očakáva a celý
+štandardný proces pre všetkých zúčastnených. Pokúsim sa objasniť rovnako aj, ako vieme určiť, koľko
+stihneme za jeden Sprint naprogramovať.</p>
+<hr>
+<p>Autor: [<a href="https://twitter.com/ondrek">ondrek</a>].</p>
+
+    </article>
+
+
+
+    </main>
+
+
+    <footer id="footer">
+
+        <a target="_blank" rel="nofollow" href="#">chcete písať?</a>,
+        <a target="_blank" rel="nofollow" href="#">o autoroch</a>,
+        <a target="_blank" rel="nofollow" href="#">pre média</a>,
+        <a target="_blank" rel="nofollow" href="https://github.com/frontendsk/frontendsk.github.io">git repo</a>,
+        <a target="_blank" rel="nofollow" href="/humans.txt">humans.txt</a>,
+        <a target="_blank" rel="nofollow" href="#">a11y manifest</a>
+
+        <br/>
+
+        &copy; 2015
+        theme designed &amp; handcrafted by samuel ondrek ;o)<br/>
+
+
+    </footer>
+
+
+</body></html>
+
+</body></html>

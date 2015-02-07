@@ -1,0 +1,202 @@
+<!DOCTYPE html><html><head>
+
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>FRONT-END SK</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link rel="shortcut icon" href="favicon.ico?1" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico?1" type="image/x-icon" />
+
+    <meta property="og:title" content="Front-End.sk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
+    <meta property="og:url" content="https://frontend.sk" />
+    <meta property="og:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <meta name="twitter:title" content="Front-End.sk" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
+    <meta name="twitter:url" content="http://frontend.sk" />
+    <meta name="twitter:description" content="Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch." />
+
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+
+
+</head><body>
+
+    <aside id="logo"><a href="https://ondrek.com/blog/">O</a></aside>
+
+    <main>
+    
+
+
+    <h1><a href="">Ako správne na Security a Hashing</a></h1>
+    <time>2014-07-13</time>
+
+    <article>
+        <p>Hashovanie vzniklo už v 90tych rokoch a články z týchto časov existujú dokonca aj v slovenčine.
+Aj tak sa však často stáva že z veľkých či malých webov leaknu plain-text hesla. Ako na to?</p>
+<!-- more -->
+<hr>
+<p><strong>Pre koho je tento článok a kto sú Tí Zlí</strong></p>
+<p>Tento článok je venovaný ľuďom, ktorí majú prehľad v základnej terminológií, avšak nepracujú
+ako full-time security analytici alebo developeri.</p>
+<p>Na security netreba dávať pozor len kvôli teenagerom, ktorí si stiahli exploit na neupdatovaný
+Wordpress, ale aj na bububu NSA-like agentúry, ktoré serú na vaše súkromie, zvedavé vlády,
+konkurenčné podniky a škaredých crackerov, ktorí sa snažia predávať informácie o vašich uživateľoch
+ďalej. Security nie je sranda o ktorej sa len číta v novinách.</p>
+<hr>
+<p><strong>Každá jedna Hash má kolíziu - z princípu</strong></p>
+<p>Na Wikipedií nájdete <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function#Cryptographic_hash_algorithms">(*)</a>
+informáciu <strong>Collision = NO</strong> čo neznamená, že niektoré Hashe nemajú kolízie, ale že neboli
+zatiaľ nájdené. Na internete je mnoho článkov a blogov, ktoré opisujú hashovacie funkcie bez
+kolízií. Toto je samozrejme úplny bullshit. Každá má kolíziu z princípu.</p>
+<p>Ak vstup do hashovacej funkcie MD5 môže byť hocijaký dlhý string, ale výstup môže byť 32 miestny
+HEX string - možno tušíte problém. Počet kombinácií 32 HEX stringu je len (no.. nie práve - &quot;len&quot;)
+16^32. To je obmedzené a presné a určite nie-nekonečné číslo. Relevatná otázka sa týka časovej
+náročnosti a nie možnosti &quot;či má&quot;..</p>
+<hr>
+<p><strong>Na cracknutie hashe potrebujete dlhý čas</strong></p>
+<p>Toto je veľký omyl. Predpoklad pri mnohých security best practices je, že matematicky je číslo
+neuveriteľne veľké a preto je to nemožné. Toto je samozrejme pravda, ale netreba ju podceňovať
+a predstavovať si niekoho so svojím 2 roky starým procesorom. Často sa uvádza že &quot;superpočítač&quot;
+by hash lámal 30 rokov, alebo aj kľudne 2000 rokov.</p>
+<p>Najväčší známy Botnet <a href="https://en.wikipedia.org/wiki/Zombie_(computer_science">(*)</a>) mal 30
+miliónov Zombies. Treba podotknúť, že teoreticky môže mať najvačší neznámy kľudne 20x viac - viď
+Heartbleed - nie vždy všetko vieme. Pokiaľ sa do crackovania netušiac pustí 30 miliónov ľudí a
+teoreticky by skúšali kombinácie 30M krát rýchlejšie .. bola by to pravdepodobne otázka pár dní.</p>
+<p>Čo ak by našli kolíziu skôr? Facebook má miliardu uživateľov, čo ak by sa namiesto &quot;iba&quot; 30
+miliónov pustila do crackovania nevedomky celá miliarda? Samozrejme sa jedná o teoretické,
+zatiaľ nepravdepodobné a stašideľné sci-fi.</p>
+<hr>
+<p><strong>Rainbow Tables a Lookup Tables cracking</strong></p>
+<p>Pokiaľ máte systém zabezpečený proti brute-force <a href="https://en.wikipedia.org/wiki/Brute-force_attack">(*)</a>
+a rovnako aj proti dictionary attack <a href="https://en.wikipedia.org/wiki/Dictionary_attack">(*)</a>
+ALEBO pokiaľ je heslo uživateľa dostatočne dlhé a komplikované:  najjednoduchším riešením
+ostáva použít svoju alebo nejakú online dostupnú predgenerovanú tabuľku s hashami
+<a href="https://en.wikipedia.org/wiki/Dictionary_attack#Pre-computed_dictionary_attack.2FRainbow_table_attack">(*)</a>.</p>
+<p>Samozrejme ak vôbec hashujete niektoré údaje.</p>
+<p>Je dôležité si uvedomiť, že pri crackovaní hashu nepotrebujeme nájsť heslo. Musíme hľadať
+iba string, ktorý (vďaka hash kolízií) má rovnaký hash, ako vaše heslo. Čo je vďaka Birthday
+paradox <a href="https://en.wikipedia.org/wiki/Birthday_problem">(*)</a> oveľa jednoduchšie, ako by sa
+to mohlo zdať. Špeciálne, pokiaľ ukladáte Hash bez použitia nejakej Salt
+<a href="https://en.wikipedia.org/wiki/Salt_(cryptography">(*)</a>).</p>
+<p>Pokiaľ však Salt používate a je to konštanta (čo vo väčšine prípadov býva - viď Wordpress),
+neuchráni vás to od predgenerovania custom Lookup table. Jednoducho si namiesto MD5 tabuľky
+predgenerujeme MD5+Salt tabuľku.</p>
+<p>Celá táto pseudo ochrana spočíva v domnení: (1) že niekto, kto vám vie hacknúť databázu nemá
+prístup aj k Salt; (2) že niekomu aspoň zabránite použiť už existujúce predgenerované tabuľky
+a (3) že pre dlhší string je ťažšie nájsť kolíziu (táto časť je naozaj pravda). Stále však nie
+cool riešenie.</p>
+<hr>
+<p><strong>Custom nekonštantná Salt</strong></p>
+<p>Trošku lepšia Salt je popritom celý čas prítomná - samotné raw heslo. Pokiaľ zahashujeme
+<code>MD5( MD5(&quot;heslo&quot;)+&quot;heslo&quot; )</code> docielime zaujímavý fakt:</p>
+<p>Nakoľko je každé jedno heslo najprv hashované v MD5 a potom je k tejto hash pridané ešte raz
+toto heslo, v druhom kroku vlastne hashujeme string dlhý 32 hex znakov plus dĺžka hesla.</p>
+<pre><code> myPassword = &quot;secret&quot;
+ MD5(myPassword) // 52cff4dcc2cf38939833903882cf99
+ MD5(&quot;52cff4dcc2cf38939833903882cf99&quot;+myPassword)
+</code></pre><p>Útočník musí prísť na kolíziu veľmi dlhého stringu a zároveň musí riešiť oveľa komplexnejší
+problém: nájsť kolízny string, ktorého MD5 hash spolu znovu s týmto stringom má opäť kolíziu
+(dvakrát kolízia po sebe).</p>
+<hr>
+<p><strong>Nepoužívajte MD5 a iné already cracknuté hashe</strong></p>
+<p>Pokiaľ viete, že konkrétna hash má známych priveľa kolízií, najjednoduchší spôsob ako vylepšíť
+tento nedostatok je použíť inú. Nie sme odsúdení na jednu hashovaciu funkciu. Všetky MD4, MD5,
+SHA 0/1/2 majú už dokázané praktické alebo teoretické kolízie
+<a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function#Cryptographic_hash_algorithms">(*)</a>.</p>
+<p>Výborným riešením je hociktorá hash zo SHA-3 alebo (moja obľúbená) RIPEMD-160. Alebo najlepšie
+ich kombinácia. Použitie SHA3-512 produkuje 128 znakov (v HEX) znakov dlhý reťazec. RIPEMD-160
+len 40 znakov dlhý reťazec.</p>
+<pre><code>hashed = SHA3-512(&quot;a&quot;)
+// 9c46dbec5d...f73ba01c7c
+
+hashed = RIPEMD160(hashed)
+// e97bf7a17fe0c6367642946a5aa8e824be0e5f7d
+</code></pre><p>Aj keby v budúcnosti niekto našiel aj kolízie SHA3 aj kolízie RIPEMD vykonateľné v reálnom čase,
+stále ich musí skombinovať pre nájdenie vašej kolízie.</p>
+<hr>
+<p><strong>Príklad princípu spomenutého hashovania</strong></p>
+<pre><code> myPassword = &quot;secret&quot;
+ mySalt = &quot;30933903903&quot;
+ hashed = SHA512(myPassword+mySalt)
+ hashed = SHA512(hashed+myPassword)
+</code></pre><hr>
+<p><strong>Nikdy netrimujte string!</strong></p>
+<p>Mnohokrát sa stáva, že developera, ktorý navrhuje security napadne orezať výslednú hash na
+menej znakov. Napríklad, ak máme výslednú hash 32 znakovú, môžeme ju orezať len na 10 znakov
+a &quot;nikto nikdy nepríde na to aká bola pôvodne, pretože tie znaky sú nenávratne stratené&quot;.</p>
+<p>Toto je síce veľmi pravdivý výrok, problém je, že ak orežete hash na 10 znakov, zvýšite
+možnosť nájsť kolízny string tak drasticky, že to bude trvať pravdepodobne pár minút. Prečo?</p>
+<pre><code>  string1st = &quot;3983398&quot;;
+  string2nd = &quot;0202922&quot;;
+
+  MD5(string1st); // 2deb000b57bfac9d72c14d4ed967b572
+  MD5(string1st); // 2deb000b574eac9d7296c1d7b572bf4d
+
+  // v tomto kroku nemajú žiadnu kolíziu
+  // ale je relatívne veľká šanca nájsť pôvodné heslo
+
+  MD5(string1st).substr(0, 10); // 2deb000b57
+  MD5(string1st).substr(0, 10); // 2deb000b57
+
+ // v tomto kroku sa môžeme prihlásiť s druhým heslom
+ // avšak áno, šanca nájsť pôvodne heslo je nižšia
+ // pretože máme mrte stringov, ktoré by to mohli byť
+</code></pre><p>Nerobte to.</p>
+<hr>
+<p><strong>Client-side hashing</strong></p>
+<p>Ak nemáte na stránke HTTPS a nehashnujete heslo už client-side, ohrozujete tým užívateľa.
+Pritom do veľmi veľa aplikácií sa dnes ani len neprihlásite bez Javascriptu. Knižnica CryptoJS
+<a href="https://code.google.com/p/crypto-js/">(*)</a> rovnako ako aj stovka ďalších implementácií ponúka
+možnosť zašifrovať password už vo formulári.</p>
+<p>Potrebujete podporovať aj užívateľov s vypnutým Javascriptom? Potom podporujte obe možnosti
+a vložte do svojho FORM napríklad hidden input, ktorý sa prepne iba ak užívateľ má JS alebo
+dostatočne supportovaný browser.</p>
+<hr>
+<p><strong>Zlaté pravidlo security = Nemajte tajomstvá</strong></p>
+<p>Pokúste sa robiť architektúru vašich aplikácií tak, ako keby boli dostupné na Githube. Nestavajte
+svoje riešenia na heslách, Salts, tajomstvách alebo záhadných postupoch a poradiach jednotlivých
+funkcií, ale snažte sa pochopiť security a robiť ju tak, aby ste ju kľudne mohli celú publikovať
+na firemnom blogu a stále bola neprekonateľná.</p>
+<p>Samozrejme, hovoríme o best practices a nie pravidle, že teraz máte svoje heslo k vašej DB a
+S3 publikovať na nete ;)</p>
+<hr>
+<p>Autor: [<a href="https://twitter.com/ondrek">ondrek</a>].</p>
+
+    </article>
+
+
+
+    </main>
+
+
+    <footer id="footer">
+
+        <a target="_blank" rel="nofollow" href="#">chcete písať?</a>,
+        <a target="_blank" rel="nofollow" href="#">o autoroch</a>,
+        <a target="_blank" rel="nofollow" href="#">pre média</a>,
+        <a target="_blank" rel="nofollow" href="https://github.com/frontendsk/frontendsk.github.io">git repo</a>,
+        <a target="_blank" rel="nofollow" href="/humans.txt">humans.txt</a>,
+        <a target="_blank" rel="nofollow" href="#">a11y manifest</a>
+
+        <br/>
+
+        &copy; 2015
+        theme designed &amp; handcrafted by samuel ondrek ;o)<br/>
+
+
+    </footer>
+
+
+</body></html>
+
+</body></html>
