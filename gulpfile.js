@@ -85,6 +85,7 @@
 			[ "watcher" ],
 		cb);
 
+
 	});
 
 
@@ -180,7 +181,7 @@
 
 		var tpl = swig.compileFile(path.join(__dirname, templateFile));
 		var site = require(TARGET_BLOG + "/site.json");
-		site.time = new Date();
+		site.time = +new Date();
 
 		return through.obj(function(file, enc, cb){
 

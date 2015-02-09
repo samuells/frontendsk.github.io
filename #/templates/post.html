@@ -1,13 +1,11 @@
-{% extends 'default.html' %}
-{% block content %}
 
+    {% extends 'default.html' %}
+    {% block content %}
 
-    <h1><a href="">{{ page.title }}</a></h1>
-    <time>{{ page.date|date('Y-m-d') }}</time>
+        <main id="post" class="main">
+            <h1 class="title"><a href="">{{ page.title }}</a></h1>
+            <time class="time">{{ page.date|date('Y-m-d') }}</time>
+            {{ content|safe }}
+        </main>
 
-    <article>
-        {{ content|safe }}
-    </article>
-
-
-{% endblock %}
+    {% endblock %}

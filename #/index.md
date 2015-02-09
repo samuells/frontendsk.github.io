@@ -1,7 +1,7 @@
 ---
 layout: index
-description: "Lorem Ipsum"
-title: Front-End SK
+description: "Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch"
+title: Front-End {SK}
 date: 2014/4/27 11:55:25
 category: design a ux
 thumbnail : design
