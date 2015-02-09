@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "V pokračovaní seriálu si ukážeme, čo treba spraviť pred každým Sprintom. Ako urobiť estimation …"
 title: Scrum a Developer - Pred (prvým) Sprintom (2/5)
-date: 2014/7/18 12:59:25
+date: 2014/07/18
 category: javascript
 thumbnail : strategy
 ---

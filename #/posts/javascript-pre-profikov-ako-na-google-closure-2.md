@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "A je tu pokračovanie najčítanejšieho (a teda jediného) seriálu v slovenčine o Closure! Tento diel bude …"
 title: Javascript pre profíkov - Ako na Google Closure (2/4)
-date: 2014/7/4 15:24:25
+date: 2014/07/04
 thumbnail : javascript
 category: javascript
 ---

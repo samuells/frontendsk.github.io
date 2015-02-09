@@ -1,16 +1,14 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "NOOP (alebo No Operation) znamená v programovaní inštrukciu, ktorá robí absolútne nič. A práve preto je …"
 title: NOOP a Javascript
-date: 2014/9/20 12:49:12
+date: 2014/9/20
 category: javascript
 thumbnail : javascript
 ---
 
 NOOP (alebo No Operation) znamená v programovaní inštrukciu, ktorá robí absolútne nič.
 A práve preto je zaujímavá. Prečo by niekto využíval také inštrukcie a načo je dobré ich poznať?
-
-<!-- more -->
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Hashovanie vzniklo už v 90tych rokoch a články z týchto časov existujú dokonca aj v slovenčine. Aj tak …"
 title: Ako správne na Security a Hashing
-date: 2014/7/13 10:37:25
+date: 2014/07/13
 category: security
 thumbnail : security
 

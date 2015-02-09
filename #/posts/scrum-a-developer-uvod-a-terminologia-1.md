@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Článok je light úvodom do SCRUMu. Seriál bude mať viac častí a je určený pre ľudí, ktorí s ním nemajú …"
 title: Scrum a Developer - Úvod a terminológia (1/5)
-date: 2014/7/17 17:45:25
+date: 2014/07/17
 category: javascript
 thumbnail : strategy
 ---

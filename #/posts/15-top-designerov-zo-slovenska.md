@@ -1,12 +1,11 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Máme na Slovensku šikovných designérov? Kde ich nájsť? Kto sú to? Pripravili sme pre vás zoznam …"
 title: 15 top designérov zo Slovenska
-date: 2014/4/27 11:55:25
+date: 2014/04/27
 category: design a ux
 thumbnail : design
 ---
-
 
 Máme na Slovensku šikovných designérov? Kde ich nájsť? Kto sú to? Pripravili sme pre vás zoznam
 designérov s najviac followermi a ukážku ich prác na základe profile na Dribbble.

@@ -70,25 +70,25 @@
     }
 
 
-/* the main box */
+/* the post section */
 
 
-    [class="main"] {
+    [id="post"][class="main"] {
         padding: 100px 0 50px;
     }
 
-    [class="main"] > p {
+    [id="post"][class="main"] > p {
         max-width: 1000px;
         padding: 0 200px;
     }
 
-    [class="main"] > blockquote {
+    [id="post"][class="main"] > blockquote {
         max-width: 1000px;
         margin: 0;
         padding: 0 200px;
     }
 
-    [class="main"] > pre {
+    [id="post"][class="main"] > pre {
         color: #AC7E1B;
         font-size: 14px;
         line-height: 20px;
@@ -97,14 +97,14 @@
         margin: 0 200px 0 140px;
     }
 
-    [class="main"] > [class="title"] {
+    [id="post"][class="main"] > [class="title"] {
         background: rgb(244, 244, 244);
         padding: 60px 200px 60px 60px;
         margin: 0 200px 0 140px;
         line-height: 56px;
     }
 
-    [class="main"] > [class="time"] {
+    [id="post"][class="main"] > [class="time"] {
         padding: 0 200px 0 60px;
         line-height: 36px;
         display: block;
@@ -112,7 +112,7 @@
         margin: 0 200px 40px 140px;
     }
 
-    [class="main"] p code {
+    [id="post"][class="main"] p code {
         color: #AC7E1B;
         font-size: 14px;
         background: rgb(244, 244, 244);
@@ -120,6 +120,18 @@
     }
 
 
+/* the post section */
+
+
+    [id="index"][class="main"] {
+        padding: 100px 0 50px;
+        margin: 0 200px 40px 140px;
+    }
+
+    [id="index"][class="main"] ul {
+        list-style: none;
+        padding: 0;
+    }
 
 
 /* other containers */

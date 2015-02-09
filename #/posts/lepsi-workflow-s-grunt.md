@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Ak sa pohybuješ vo svete front-endu, tak si už pravdepodobne počul niečo o Grunte. Ale ako to celé …"
 title: Lepší workflow s Grunt
-date: 2014/7/14 17:04:25
+date: 2014/07/14
 category: tooling
 thumbnail : tools
 ---

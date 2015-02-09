@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Vyhlasujeme súťať o invitation do Dribbble pre jedného Slováka! Čitateľ, ktorý pošle najkrajší …"
 title: Májová súťaž o pozvánku do Dribbble
-date: 2014/4/27 11:55:25
+date: 2014/05/05
 category: obcasnik
 thumbnail : calendar
 ---

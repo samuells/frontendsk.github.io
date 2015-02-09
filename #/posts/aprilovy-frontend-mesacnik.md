@@ -1,11 +1,10 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Z nedostatku času padlo rozhodnutie nepublikovať malé články, ale radšej občasne a hromadne. Tu je …"
 title: Aprílový Front-end mesačník
-date: 2014/4/28 10:05:25
+date: 2014/04/28
 category: obcasnik
 thumbnail : calendar
-
 ---
 
 Z nedostatku času padlo rozhodnutie nepublikovať malé články, ale radšej občasne a hromadne.

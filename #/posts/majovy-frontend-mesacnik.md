@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Čo nás v máji zaujalo v našom malom front-end svete zdieľame v májovom mesačníku. A ak máte tipy na …"
 title: Májový Front-end mesačník
-date: 2014/7/2 21:21:25
+date: 2014/07/02
 category: obcasnik
 thumbnail : calendar
 ---

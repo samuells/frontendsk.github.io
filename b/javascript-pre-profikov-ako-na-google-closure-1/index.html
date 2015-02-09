@@ -1,0 +1,174 @@
+<!DOCTYPE html><html><head>
+
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Javascript pre profíkov - Ako na Google Closure (1/4)</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Tento článok je úvodom o Google Closure v mini-seriály, ktorý bude mať štyri časti (je možné, že …" />
+
+    <link rel="shortcut icon" href="favicon.ico?1423499072099" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico?1423499072099" type="image/x-icon" />
+
+    <meta property="og:title" content="Front-End.sk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
+    <meta property="og:description" content="Tento článok je úvodom o Google Closure v mini-seriály, ktorý bude mať štyri časti (je možné, že …" />
+
+    <meta name="twitter:title" content="Front-End.sk" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
+    <meta name="twitter:description" content="Tento článok je úvodom o Google Closure v mini-seriály, ktorý bude mať štyri časti (je možné, že …" />
+
+    <link href="/assets/styles.css?1423499072099" rel="stylesheet" type="text/css" />
+
+
+</head><body>
+
+
+    <!--
+      Hello, dear developer!
+      Theme is copyrighted and created by Samuel Ondrek;
+      ---
+      Generated: 1423499072099
+    -->
+
+
+    <h2 id="logo"><a href="/">{FE}SK</a></h2>
+
+
+    
+
+        <main id="post" class="main">
+            <h1 class="title"><a href="">Javascript pre profíkov - Ako na Google Closure (1/4)</a></h1>
+            <time class="time">2014-05-07</time>
+            <p>Tento článok je úvodom o Google Closure v mini-seriály, ktorý bude mať štyri časti <small>(je možné, že ich urobím aj
+desať, ale je aj možné, že sa na to úplne vyseriem po prvej časti)</small>. Je určený pre ľudí, ktorí vedia, čo je to
+Javascript a robia JS-heavy aplikácie. Nie je určený ľudom, ktorí potrebujú jQuery na jednoduché DOM manipulácie.</p>
+<p>[[MORE]]</p>
+<hr>
+<p><strong>Problém</strong></p>
+<p>V browrsi pri enterprise aplikáciach sa stretávame najčastejšie s týmito troma problémami: (1) debilita vývojárov
+browsrov a ich neochota čítať špeficikácie pre DOM API a ECMA specs, (2) performance, minifikácia a memory leaky a
+(3) readability kódu, maintenance, modularita a rozumná organizácia kódu s viacerými developermi.</p>
+<hr>
+<p><strong>Google riešenie - Closure</strong></p>
+<p>Päť rokov dozadu Google publikoval ich súkromnú JS library - Google Closure, ktorú používajú v takmer všetkých svojích
+projektoch (Search, Gmail, Maps, Docs, Google+, Calendar...).</p>
+<p>Jedná sa o zbierku knižníc, fallbackov a užitočných utilities pre tvorbu väčších cross-browser aplikácií (Closure je
+perfektná aj na tvorbu maličkých projektov, avšak scope, ktorý potrebujete vedieť je jednoducho priveľký - nebudem
+študovať 2 roky C++, ak potrebujem premenovať 10 súborov).</p>
+<hr>
+<p>Samotná Closure sa delí na 4 standalone časti:</p>
+<ol>
+<li><p><strong><a href="https://developers.google.com/closure/library/">Closure Library</a></strong> je obrovská zbierka cross-browser modulov a low-level utilities od všetkého od DOM
+manipulácie, komunikácie so servrom, string / date / number utilít, unit testing funkcií až po animácie. Stačí si
+requirnút modul, ktorý potrebujete, a použíť ho.</p>
+</li>
+<li><p><strong><a href="https://developers.google.com/closure/compiler/">Closure Compiler</a></strong> je advanced compiler pre JS (nie interpreter, ale compiler), ktorý, zjednodušene povedané,
+na základe anotácií a konvencií a nastavení, nielen odstráni white spaces, ale kompletne transformuje váš kód na
+efektívnejší, odstráni fallbacky na nesupportované browsre, pridá fallbacky na supportované, odstráni časti kódu,
+ktoré by sa normálne nevykonali a milión ďalších vecí.</p>
+</li>
+<li><p><strong><a href="https://developers.google.com/closure/templates/">Closure Templates</a></strong> je len ďalší templatovací jazyk od Google. Mňa osobne nikdy extrémne neoslovil. Môžete
+používať vašu obľubenú alternatívu a Google iba ponúka ich alternatívu. Má určité výhody, ako napríklad Java
+implementáciu (a tým pádom možnosť použíť rovnaké templaty na server aj client side), XSS escaping, jednoduchú syntax ..</p>
+</li>
+<li><p><strong><a href="https://developers.google.com/closure/utilities/">Closure Linter</a></strong> je code quality tool, ktorý si môžete pridať do vašeho IDE a dohliada na konvencie, anotácie,
+chýbajúce operátory a bodkočiarky, spacing, TODOs pri commitovaní, prítomnosť anotácií pre compiler alebo JsDoc. Je
+to jednoducho tool, ktorý vás donúti pred commitovaním si poopravovať chyby vo vašom kóde podľa dohodntých konvencií.
+Môže byť veľmi užitočný vo väčších tímoch, ale aj sa môžete na neho úplne vykašlať.</p>
+</li>
+</ol>
+<hr>
+<p><strong>Nezávislosť</strong></p>
+<p>Čo si mnoho začínajúcich developer avšak neuvedomuje, je, že Google vás netlačí do používania všetkých štyroch toolov.
+Kľudne môžete používať len jeden súbor z Library. Alebo vašu obľúbenú JS knižnicu a iba Compiler. Toto je veľmi užitočná
+výhoda, pretože necháva všetko na vás a môžete si nájsť svoju vlastnú cestu.</p>
+<hr>
+<p><strong>Prvý krok s Library - Boilerplate</strong></p>
+<p>Closure je naozaj lightweight a pre najmenšiu možnú aplikáciu potrebujeme len načítať <code>Base.js</code>, ktorý nájdeme aj na CDN:</p>
+<pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;
+
+    &lt;script src=&quot;//closure-library.googlecode.com/svn/trunk/closure/goog/base.js&quot;&gt;&lt;/script&gt;
+
+&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;
+</code></pre><p>Po načítaní stránky sa loadne Closure a ako globálna premenná <code>goog</code> a máme k nej access v celej našej aplikácií. Base
+obsahuje základné funkcie a pôsobí ako bootstrap aplikácie. Získame access k metódam ako <code>bind</code>, <code>require</code>, <code>provide</code>,
+<code>isArray</code>, <code>isDef</code>, <code>isObject</code>, <code>isNumber</code>, <code>debug</code>, <code>math</code>, <code>now</code>, <code>cloneObject</code> a mnohým ďaľším.</p>
+<hr>
+<p><strong>Druhý krok s Library - Require a Modules</strong></p>
+<p>Nakoľko sa knižnica skladá z obrovského množstva subknižníc, modulov, utilities a shims, pre každú časť, ktorú
+potrebujeme použíť musíme requirnúť príslušnú časť. Napríklad pre DOM manipuláciu (poznáte z jQuery) musíme requirnúť
+<code>goog.dom</code> pred váš kód.</p>
+<p>Týmto získale prístup ku všetkým DOM API related funkciám ako <code>appendChild</code>, <code>contains</code>, <code>classes</code>, <code>findNode</code>,
+<code>isElement</code>, <code>getWindow</code>, <code>getElementByX</code>, <code>replaceNode</code>, <code>removeNode</code>, ktoré môžeme poznať aj z ostatných frameworkov
+ako jQuery alebo Zepto.</p>
+<pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;
+
+    &lt;script src=&quot;//closure-library.googlecode.com/svn/trunk/closure/goog/base.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script&gt;
+    goog.require(&quot;goog.dom&quot;);
+    &lt;/script&gt;
+
+     &lt;script&gt;
+     var section = goog.dom.createElement(&quot;section&quot;);
+     var childNote = goog.dom.createElement(&quot;div&quot;);
+     goog.dom.appendChild(section, childNote);
+    &lt;/script&gt;
+
+&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;
+</code></pre><hr>
+<p><strong>Iné zaujímavé príklady</strong></p>
+<p>Nakoľko toto je len Úvod do Closure, nebudem tu rozpisovať všetky moduly a ich použítie. Uvediem ešte jeden príklad,
+ktorý hashuje string do Sha265, takže raw heslo reálne od uživateľa ani nemusí oddísť (napríklad pri registrácií alebo
+prihlasovaní a nemožnosti HTTPS), ale môžete poslať rovno jednoducho hash..</p>
+<pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;
+
+    &lt;script src=&quot;//closure-library.googlecode.com/svn/trunk/closure/goog/base.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script&gt;
+    goog.require(&quot;goog.crypt&quot;);
+    goog.require(&quot;goog.crypt.Sha256&quot;);
+    &lt;/script&gt;
+
+    &lt;script&gt;
+    var sha256 = new goog.crypt.Sha256();
+    sha256.update(&quot;secret&quot;);
+
+    var hashed = sha256.digest();
+    console.log(&quot;binary&quot;, hashed);
+    console.log(&quot;hex&quot;, goog.crypt.byteArrayToHex(hashed));
+    console.log(&quot;string&quot;, goog.crypt.byteArrayToString(hashed));
+    &lt;/script&gt;
+
+&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;
+</code></pre><hr>
+<p>Ďalšie fancy príklady, článok o Compiler a nejaké zaujmavejšie veci uvediem v pokračovaní. Ak ste našli chybu, niečo
+som zle vysvetlil alebo podobne, píšte na twitter.</p>
+<hr>
+<p>Autor [<a href="http://twitter.com/ondrek">ondrek</a>].</p>
+
+        </main>
+
+    
+
+    <footer id="footer">
+        <a target="_blank" rel="nofollow" href="#">chcete písať?</a>,
+        <a target="_blank" rel="nofollow" href="#">o autoroch</a>,
+        <a target="_blank" rel="nofollow" href="#">pre média</a>,
+        <a target="_blank" rel="nofollow" href="https://github.com/frontendsk/frontendsk.github.io">git repo</a>,
+        <a target="_blank" rel="nofollow" href="/humans.txt">humans.txt</a>,
+        <a target="_blank" rel="nofollow" href="#">a11y manifest</a>
+        <br/>
+        &copy; 2015
+        theme designed &amp; handcrafted by samuel ondrek ;o)<br/>
+    </footer>
+
+
+</body></html>

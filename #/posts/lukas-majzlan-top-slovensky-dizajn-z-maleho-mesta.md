@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Lukáš je jeden z top slovenských web dizajnérov. Jeho agentúra so sídlom v Prievidzi je dôkazom, ako …"
 title: Lukáš Majzlan — top slovenský dizajn z malého mesta
-date: 2014/9/3 09:34:12
+date: 2014/09/03
 category: rozhovor
 thumbnail : interview
 ---
@@ -11,9 +11,6 @@ thumbnail : interview
 Lukáš je jeden z top slovenských web dizajnérov. Jeho agentúra so sídlom v Prievidzi je dôkazom,
 ako dobre sa dá robiť biznis svetovej kvality z menšieho slovenského mesta ..
 
-
-
-<!-- more -->
 
 ---
 

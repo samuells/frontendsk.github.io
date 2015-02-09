@@ -1,11 +1,12 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Pripravili sme pre vás zaujmavý mix facebook group v SK / CZ jazyku, takže môžete komunikovať s …"
 title: Zaujímavé Slovenské FB groupy
-date: 2014/1/30 13:15:25
+date: 2014/01/30
 category: javascript
 thumbnail : slovakia
 ---
+
 
 Pripravili sme pre vás mix SK/CZ FB group, kde môžete komunikovať s lokálnymi developermi. Jedná
 sa o skupiny o designe, geekoch, ruby, webe alebo pythone. Do všetkých sa stačí prihlásiť.

@@ -1,8 +1,8 @@
 ---
 layout: post
-description: "Lorem Ipsum"
+description: "Super rozhovor s Jánom Rosom o tom, aké výhody má práca v zahraničí, ako sa najímajú ľudia v Google…"
 title: Rozhovor o HR, recruitingu a Google s Jánom Rosom
-date: 2014/5/2 07:53:25
+date: 2014/05/02
 category: rozhovor
 thumbnail : interview
 ---

@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head>
+
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>5 vecí, ktoré ste doteraz v Developer tools neobjavili</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Máme na Slovensku šikovných designérov? Kde ich nájsť? Kto sú to? Pripravili sme pre vás zoznam …" />
+
+    <link rel="shortcut icon" href="favicon.ico?1423499072099" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico?1423499072099" type="image/x-icon" />
+
+    <meta property="og:title" content="Front-End.sk" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
+    <meta property="og:description" content="Máme na Slovensku šikovných designérov? Kde ich nájsť? Kto sú to? Pripravili sme pre vás zoznam …" />
+
+    <meta name="twitter:title" content="Front-End.sk" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
+    <meta name="twitter:description" content="Máme na Slovensku šikovných designérov? Kde ich nájsť? Kto sú to? Pripravili sme pre vás zoznam …" />
+
+    <link href="/assets/styles.css?1423499072099" rel="stylesheet" type="text/css" />
+
+
+</head><body>
+
+
+    <!--
+      Hello, dear developer!
+      Theme is copyrighted and created by Samuel Ondrek;
+      ---
+      Generated: 1423499072099
+    -->
+
+
+    <h2 id="logo"><a href="/">{FE}SK</a></h2>
+
+
+    
+
+        <main id="post" class="main">
+            <h1 class="title"><a href="">5 vecí, ktoré ste doteraz v Developer tools neobjavili</a></h1>
+            <time class="time">2014-04-26</time>
+            <p>Takmer každý týždeň sa mi podarí v Chrome Developer tools nájsť fičúru, na ktorú pozerám s otvorenými ústami a vravím
+si &quot;… aj toto devtools dokážu?!&quot; Dnes to bude developerský výber zopár mojich obľúbených.</p>
+<ol>
+<li>Všímaj si aj šedý text</li>
+</ol>
+<p>Pri ladení performance stránok poskytujú devtools zaujímavú a pomerne skrytú informáciu. Na Network tabe je v záhlaví
+tabuľky v tĺpci s veľkosťou a časom aj druhá informácia - o skutočnej veľkosti obsahu a latency - oneskorení.</p>
+<p>image</p>
+<p>Prvá info nám hovorí o tom, ako dobre je nastavená kompresia na serveri. Čím väčší je rozdiel medzi Size (stiahnutá
+veľkosť) a Content (skutočná veľkosť obsahu), tým viac by naša pozornosť mala smerovať k nastaveniu gzipovania.</p>
+<p>Šedý čas v Time stĺpci zasa označuje, koľko z celkového času tvorilo iba čakanie. Odstránenie takýchto problémov chce
+už naštudovať viac o HTTP.</p>
+<ol>
+<li>Nie každý console je .log()</li>
+</ol>
+<p>Nasledovné sa vysvetlí samo - stačí copy&amp;paste do konzoly ;)</p>
+<p>console.info(&#39;Pri informacii sa zobrazi ikonka s i&#39;);
+console.error(&#39;Cerveny error&#39;);
+console.warn(&#39;Warning oznacuje zlta farba&#39;);
+console.table([[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;],[&#39;f&#39;,&#39;g&#39;,&#39;h&#39;,&#39;i&#39;,&#39;j&#39;,&#39;k&#39;]]); //moj momentalny favorit :)
+Pomocou console.table() sa dajú krásne vypisovať aj objekty. Priceless.</p>
+<p>image</p>
+<ol>
+<li>Formát farieb podľa chuti</li>
+</ol>
+<p>Pri inspectovaní elementu sa v tabe Styles zobrazujú farby v takom formáte, v akom sa nachádzajú v stylesheete -
+napríklad #222, #28ADE6 či rgb(40, 173, 230).</p>
+<p>Nielenže môžeš shift-clickom priamo na farebný štvorček prepínať formáty (HEX / RGB / HSL), dokonca si v nastaveniach
+devtools môžeš zadať tvoj preferovaný formát. Odteraz sa ti farby budú zobrazovať v ňom.</p>
+<ol>
+<li>Pretty print, please!</li>
+</ol>
+<p>Minifikované súbory skriptov a stylesheetov sú bez ďalších úprav nečitateľné. Pretty print - nenápadná ikonka zložených
+zátvoriek v tabe Sources - je odpoveďou na tento problém.</p>
+<ol>
+<li>Stovky zariadení v jednom</li>
+</ol>
+<p>Poznáte ten obrázok I heard you want to be a web developer? Nové verzie Chrome pekne vylepšili emuláciu mobilných
+zariadení:</p>
+<p>voľba zariadenia (od iPhone po Kindle)
+simulácia rýchlosti siete - ako sa váš web načítava na GPRS? Skvelá vec!
+resoution aj pixel ratio
+emulácia touch screen
+emulácia geolocation koordinátov</p>
+<p>(Už dnes vo vašom Chrome - ak nie, stiahni Chrome Canary)</p>
+<p>Bonus</p>
+<p>A ešte chuťovka - poznáš spôsob ako najjednoduchšie vypísať do konzoly nejaký element? Zoznám sa, dolár_nula:</p>
+<p>na tabe Elements vyznač myšou napr <div class=​"row page js_page"></div>​
+prepni sa do konzoly a napíš $0
+voilá</p>
+<p>To je nateraz všetko, no určite nie všetko, čo Developer tools ponúkajú. Máš ďalšie tipy? Tweetni s hashtagom</p>
+<h1 id="frontendsk-a-mention-andrejminarik">frontendsk a mention @andrejminarik</h1>
+<hr>
+<p>Autor [<a href="http://twitter.com/ondrek">ondrek</a>].</p>
+
+        </main>
+
+    
+
+    <footer id="footer">
+        <a target="_blank" rel="nofollow" href="#">chcete písať?</a>,
+        <a target="_blank" rel="nofollow" href="#">o autoroch</a>,
+        <a target="_blank" rel="nofollow" href="#">pre média</a>,
+        <a target="_blank" rel="nofollow" href="https://github.com/frontendsk/frontendsk.github.io">git repo</a>,
+        <a target="_blank" rel="nofollow" href="/humans.txt">humans.txt</a>,
+        <a target="_blank" rel="nofollow" href="#">a11y manifest</a>
+        <br/>
+        &copy; 2015
+        theme designed &amp; handcrafted by samuel ondrek ;o)<br/>
+    </footer>
+
+
+</body></html>
