@@ -57,7 +57,7 @@ o `Function.prototype.bind` .. je nazvaná v terajšej implementácií ako `fNOP
 Autor článku je [[Samuel Ondrek](https://twitter.com/ondrek)].
 
 
- [1] : https://api.jquery.com/jquery.noop/
- [2] : http://www.ilinsky.com/articles/XMLHttpRequest/#bugs-ie-leak
- [3] : http://bit.ly/1qTKPYH
- [4] : http://mzl.la/1v2VZZr
+ [1]: https://api.jquery.com/jquery.noop/
+ [2]: http://www.ilinsky.com/articles/XMLHttpRequest/#bugs-ie-leak
+ [3]: http://bit.ly/1qTKPYH
+ [4]: http://mzl.la/1v2VZZr

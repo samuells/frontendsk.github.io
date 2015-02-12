@@ -11,8 +11,6 @@ Tento článok je úvodom o Google Closure v mini-seriály, ktorý bude mať št
 desať, ale je aj možné, že sa na to úplne vyseriem po prvej časti)</small>. Je určený pre ľudí, ktorí vedia, čo je to
 Javascript a robia JS-heavy aplikácie. Nie je určený ľudom, ktorí potrebujú jQuery na jednoduché DOM manipulácie.
 
-[[MORE]]
-
 ---
 
 **Problém**

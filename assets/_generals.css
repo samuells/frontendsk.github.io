@@ -3,15 +3,16 @@
 
     @import url("//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css");
     @import url("//fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500&subset=latin,latin-ext");
-    @import url("//fonts.googleapis.com/css?family=Karma:400,500,300,600,700&subset=latin,latin-ext");
 
 
     ::-moz-selection {
-        background: #FFC6C6;
+        background: #EF7863;
+        color: white;
     }
 
     ::selection {
-        background: #FFC6C6;
+        background: #EF7863;
+        color: white;
     }
 
     html {
@@ -25,15 +26,15 @@
     body {
         text-rendering: optimizeLegibility;
         font-family: "Karma", "Georgia", "Cambria", "EversonMono", "EversonMono", "Segoe UI Symbol", "Symbola", "Ubuntu", "Arial", serif;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 29px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
         color: #000318;
         overflow-x: hidden;
     }
 
     hr {
-        height: 10px;
+        height: 40px;
         border: 0;
     }
 
@@ -43,20 +44,20 @@
     }
 
     a {
-        color: #AC1B1B;
+        color: #EF7863;
         text-decoration: none;
     }
 
     a:hover {
-        transition: all 0.3s linear;
-        -moz-transition: all 0.3s linear;
-        opacity: 0.4;
-        filter: alpha(opacity=40);
+        transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        opacity: 0.7;
+        filter: alpha(opacity=70);
     }
 
     i { /* yeah, fuck the italic */
         font-style: normal;
-        color: #AC1B1B;
+        color: #EF7863;
     }
 
     em {
@@ -73,6 +74,34 @@
 
     /* other containers */
 
+    [id="header"] a {
+        display: inline-block;
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        font-size: 24px;
+        margin-right: 3px;
+    }
+
+
+    [id="header"] [id="logo"] {
+        color: #EF7863;
+    }
+
+
+
+    [id="header"] a:before {
+        content: "/";
+        display: inline-block;
+        color: #CDCDCD;
+        margin: 0 11px 0 6px;
+        font-weight: 300;
+    }
+
+    [id="header"] a:first-child:before {
+        content: "";
+        margin: 0;
+    }
+
 
     [id="footer"]{
         margin: 250px 200px 0 140px;
@@ -83,7 +112,7 @@
     }
 
     [id="footer"] a {
-        color: rgb(181, 142, 149);
+        color: #EF7863;
     }
 
     [id="header"]{

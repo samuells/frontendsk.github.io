@@ -18,8 +18,6 @@ jQuery fn
 V Javascripte som nikdy nebol fanúšikom dvoch riešení. Prvým sú heavy frameworky namiesto lightweight libraries. Druhým
 je objected-based syntax namiesto prototype-based syntaxy. Tento článok je o prvej a napísaný v druhej ..
 
-[READ_MORE]
-
 ---
 
 Totiž príhodne tohtoročná dvojdňová konferencia Webexpo (najväčšia front-end konferencia v na Slovensku a v Čechách) sa

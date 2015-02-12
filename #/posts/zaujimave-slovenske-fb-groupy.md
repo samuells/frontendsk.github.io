@@ -49,4 +49,6 @@ napríklad objavíte šikovných ľudí na spoluprácu.
 
 ---
 
+---
+
 Autor [[ondrek](http://twitter.com/ondrek)].

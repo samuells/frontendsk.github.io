@@ -7,21 +7,14 @@ category: design a ux
 thumbnail : design
 ---
 
-Ahoj.
+Vitaj, priateľu v redesignovanom občasníku o front-ende.
+Okoštuj články:
 
 ---
-
-<img src="/media/thumbnails/css3.png" />
-<time>2014/04/27</time>
-[5 mnt videopodcast: CSS atribút selektory](/b/5-mnt-videopodcast-CSS atribut-selektory/)
 
 <img src="/media/thumbnails/javascript.png">
 <time>2014/04/27</time>
 [NOOP a Javascript](/b/noop-a-javascript/)
-
-<img src="/media/thumbnails/javascript.png">
-<time>2014/09/20</time>
-[Javascript libraries vs. frameworky](/b/javascript-libraries-vs-frameworky/)
 
 <img src="/media/thumbnails/interview.png">
 <time>2014/09/03</time>

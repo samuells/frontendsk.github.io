@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <title>NOOP a Javascript</title>
+    <title>Autori</title>
 
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="NOOP (alebo No Operation) znamená v programovaní inštrukciu, ktorá robí absolútne nič. A práve preto je …" />
+    <meta name="description" content="Ľudia, ktorí pre vás pripravujú občasník Front-End vo všetkej svojej kráse" />
 
     <link rel="shortcut icon" href="favicon.ico?1423761479688" type="image/x-icon" />
     <link rel="icon" href="favicon.ico?1423761479688" type="image/x-icon" />
@@ -17,12 +17,12 @@
     <meta property="og:title" content="Front-End.sk" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
-    <meta property="og:description" content="NOOP (alebo No Operation) znamená v programovaní inštrukciu, ktorá robí absolútne nič. A práve preto je …" />
+    <meta property="og:description" content="Ľudia, ktorí pre vás pripravujú občasník Front-End vo všetkej svojej kráse" />
 
     <meta name="twitter:title" content="Front-End.sk" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
-    <meta name="twitter:description" content="NOOP (alebo No Operation) znamená v programovaní inštrukciu, ktorá robí absolútne nič. A práve preto je …" />
+    <meta name="twitter:description" content="Ľudia, ktorí pre vás pripravujú občasník Front-End vo všetkej svojej kráse" />
 
     <link href="/assets/_generals.css?1423761479688" rel="stylesheet" type="text/css" />
     <link href="/assets/_post.css?1423761479688" rel="stylesheet" type="text/css" />
@@ -49,41 +49,28 @@
 
     
 
-        <main id="post" class="main">
-            <h1 class="title"><a href="">NOOP a Javascript</a></h1>
-            <time class="time">2014-09-19</time>
-            <p>NOOP (alebo No Operation) znamená v programovaní inštrukciu, ktorá robí absolútne nič.
-A práve preto je zaujímavá. Prečo by niekto využíval také inštrukcie a načo je dobré ich poznať?</p>
+        <main id="page" class="main">
+            <h1 class="title"><a href="">Autori</a></h1>
+            <p><strong>Samuel Ondrek</strong>
+<a href="https://twitter.com/ondrek">@ondrek</a></p>
+<p>Samuel robí FE od dôb aktívneho Blackhole, Pajkusovho občasníka a internetového porna vo forme obrázkov. Chvíľku robil
+v BA, chvíľku Kórei, chvíľku v Amsterdame a teraz vo Viedni. Aktívne priberá a píše o sebe v tretej osobe ;)</p>
 <hr>
-<p><strong>Swollorexic sample</strong></p>
-<p>NOOP sa zvyčajne odstráni kompilátorom alebo minifierom v nejakom stepe, ešte pred vykonávaním
-programu. Používa sa v teoretickej informatike a v zložitejších algoritmoch.</p>
-<p>Može to byť napríklad semicolon, ktorý nič neukončuje, volanie prázdnej funkcie alebo setovanie
-properties na JS primitívy ako string, number alebo boolean:</p>
-<pre><code>; // alebo {} alebo &quot;&quot; alebo veľa iných
-emptyFn(); // definovaná ako emptyFn = function(){}
-
-false[&quot;foo&quot;] = &quot;hello&quot;; // lebo primitíva nemôže mať property
-&quot;abc&quot;[&quot;foo&quot;] = &quot;hello&quot;;
-12345[&quot;foo&quot;] = &quot;hello&quot;;
-</code></pre><p>.. aj keď existuje samozrejme mnoho iných príkladov.</p>
+<p><strong>Andrej Minárik</strong>
+<a href="https://twitter.com/andrejminarik">@andrejminarik</a></p>
+<p>Pohybuje sa najradšej na front-ende a na bicykli v meste, miluje slovenské hory, už roky je inštruktor-dobrovoľník
+v neziskovke Plusko. V súčasnosti stavia custom WordPress šablóny v slobodnej firme Webikon, baví ho website performance
+a prototyping webov.</p>
 <hr>
-<p><strong>jQuery.noop()</strong></p>
-<p>Aj samotné jQuery má funkciu <code>noop</code>, ktorú môžete použiť, keď potrebujete &quot;pohodiť okolo funkciu,
-ktorá nič nerobí&quot;, ako hovorí oficiálna dokumentácia (<a href="https://api.jquery.com/jquery.noop/">*</a>).</p>
-<p>Predstavili ju kvôli memory leaku pri používaní XMLHttpRequest v starších IEčkach (<a href="http://www.ilinsky.com/articles/XMLHttpRequest/#bugs-ie-leak">*</a>) a neskôr
-sa začala používať interne aj pri <code>ajax</code>, <code>offset</code> alebo <code>modules</code>.</p>
+<p><strong>Radovan Kuka</strong>
+<a href="https://twitter.com/radovan_kuka">@radovan_kuka</a></p>
+<p>Radumír nám ešte nedal popis, tak ho tu zatiaľ opíšeme. Žije v Bratislave, je to čerstvý ženáč a otec. Štuďoval na
+FIIT. Lorem Ipsum. Tak, to by aj stačílo. A ešte nejaký lorem ipsum, aby to bolo dlhšie a nevyzeralo sucho. A už to
+máme! Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum.</p>
 <hr>
-<p><strong>Na čo sa to používa?</strong></p>
-<p>Používa sa napríklad pri meraní času alebo rôznych performance issues, kedy potrebujeme presne jednu
-inštrukciu, ktorá trvá čo najmenší časový úsek. Napríklad dvojbodka <code>;</code> v prázdnom riadku sa vykoná
-približne <strong>jeden a pol miliardy krát za sekundu</strong>. Okolo 90 miliárd krát za minútu. Následne teda
-vieme porovnávať voči niečomu, čo je naozaj takmer tik procesora.</p>
-<p>NOOP sa používa napríklad aj v polyfille na defaultný <code>bind</code>, ktorý môžete nájsť na stránke MDN (<a href="http://mzl.la/1v2VZZr">*</a>)
-o <code>Function.prototype.bind</code> .. je nazvaná v terajšej implementácií ako <code>fNOP</code> a implementovaná ako
-<code>fNOP = function () {}</code> ..</p>
+<p><strong>Tu môže byť aj tvoje meno!</strong></p>
+<p>Tu môže byť aj tvoje meno ak chceš písať…! <a href="/p/prispej">Prispej!</a></p>
 <hr>
-<p>Autor článku je [<a href="https://twitter.com/ondrek">Samuel Ondrek</a>].</p>
 
         </main>
 

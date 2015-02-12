@@ -22,16 +22,24 @@
     }
 
     [id="post"][class="main"] > pre {
-        color: #AC1B1B;
+        color: #EF7863;
         font-size: 14px;
         line-height: 20px;
-        background: rgb(244, 244, 244);
+        background: rgb(247, 247, 247);
         padding: 60px 200px 60px 60px;
         margin: 0 200px 0 140px;
+        font-weight: 400;
+    }
+
+    [id="post"][class="main"] > ul,
+    [id="post"][class="main"] > ol {
+        max-width: 1000px;
+        margin: 0;
+        padding: 0 200px;
     }
 
     [id="post"][class="main"] [class="title"] {
-        padding: 60px 200px 0px 60px;
+        padding: 60px 200px 0 60px;
         margin: 0 200px 0 140px;
         max-width: 860px;
         font-size: 31px;
@@ -53,10 +61,39 @@
     }
 
     [id="post"][class="main"] p code {
-        color: #AC1B1B;
+        color: #EF7863;
         font-size: 14px;
         background: rgb(244, 244, 244);
-        padding: 4px 10px;
+        padding: 3px 9px;
+        font-weight: 800;
     }
+
+
+
+
+    [id="subscribe"] {
+        margin-bottom: 72px;
+    }
+
+    [id="subscribe"] .mc-field-group,
+    [id="subscribe"] #mc-embedded-subscribe {
+        display: inline-block;
+    }
+
+    [id="subscribe"] #mce-EMAIL {
+        padding: 3px 20px;
+        border: 2px solid transparent;
+        border-bottom: 2px solid rgb(163, 163, 163);
+        transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+    }
+
+    [id="subscribe"]:hover #mce-EMAIL {
+        border: 2px solid #EF7863;
+        transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+    }
+
+
 
 

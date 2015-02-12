@@ -1,0 +1,9 @@
+
+    [id="page"][class="main"] {
+        max-width: 1000px;
+        padding: 100px 200px 50px;
+    }
+
+    [id="page"][class="main"] [class="title"] {
+        display: none;
+    }

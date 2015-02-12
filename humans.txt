@@ -1,1 +1,13 @@
-humans.
+
+
+
+	Welcome!
+
+
+	This website was made by Gulp, WebStorm and HTML5/CSS3.
+	Is hosted on Github as a repository in github.com/frontendsk.
+	For the website was not used any generator, only Gulp.
+	For more info contact @ondrek on Twitter!
+
+
+	Thanks for the visit!

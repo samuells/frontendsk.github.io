@@ -27,10 +27,6 @@ podobne. Zo zahraničných klientov patrí medzi najväčšie mená určite CERN
 
 ---
 
-![](https://31.media.tumblr.com/166cfea372dfdf686ee9fbe8f6505408/tumblr_inline_nbdqoa0RSt1rsvtc0.jpg)
-
----
-
 **Ty podnikáš v Prievidzi, čo je dôkaz, že nie je nevyhnutnosť sa hneď presťahovať do
 Bratislavy, ak chce človek robiť celoslovensky alebo medzinárodne. Slovenský štandard
 je presťahovať sa do Bratislavy. Užívaš si život v menšom meste a čo sú výhody a nevýhody?**
@@ -60,10 +56,6 @@ pre nich príliš drahé.
 tak pre nás najzaujímavejší klient je zrejme organizácia CERN zo Švajčiarska, a to hlavne pre
 ich nároky a pre ich veľkosť. Keď vám dizajn schvaľuje tridsať ľudí, tak si užijete celkom napäté
 chvíľky :)
-
----
-
-![](https://31.media.tumblr.com/a1d2c2eb563f59da79f527ed6d3c31d4/tumblr_inline_nbdqpsoVdC1rsvtc0.jpg)
 
 ---
 
@@ -133,9 +125,6 @@ v napredovaní. Stále je čo zlepšovať, trendy sa menia, prichádzajú nové 
 dobre navrhovať grafické rozhrania a tento vývoj neskončí tak isto, ako by sa mal dizajnér stále učiť nové
 veci.
 
----
-
-![](https://31.media.tumblr.com/98fa22ec7b61de66052f4dc4957cde18/tumblr_inline_nbdqrfFJhY1rsvtc0.jpg)
 
 ---
 

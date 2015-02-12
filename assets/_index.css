@@ -5,6 +5,10 @@
         margin: 0 0 40px 200px;
     }
 
+    [id="index"] h1 {
+        display: none;
+    }
+
 
     [id="index"][class="main"] ul {
         list-style: none;

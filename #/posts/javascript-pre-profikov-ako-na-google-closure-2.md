@@ -11,9 +11,6 @@ category: javascript
 A je tu pokračovanie najčítanejšieho (a teda jediného) seriálu v slovenčine o Closure! Tento
 diel bude stručným vysvetlením prototype štruktúry a jedhoduchého introduction do architektúry.
 
-
-<!-- more -->
-
 ---
 
 **OOP prístup a DOM manipulácia**
