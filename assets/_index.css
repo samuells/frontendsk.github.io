@@ -1,0 +1,48 @@
+
+
+    [id="index"][class="main"] {
+        padding: 100px 0 50px;
+        margin: 0 0 40px 200px;
+    }
+
+
+    [id="index"][class="main"] ul {
+        list-style: none;
+        padding: 0;
+    }
+
+
+    [id="index"][class="main"] img {
+        width: 73px;
+        float: left;
+        margin-right: 37px;
+        opacity: 0.6;
+    }
+
+
+    [id="index"][class="main"] time {
+        display: block;
+        color: rgb(205, 205, 205);
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: -4px;
+    }
+
+
+    [id="index"][class="main"] a {
+        display: block;
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        font-size: 24px;
+    }
+
+
+    [id="index"][class="main"] p {
+        overflow: hidden;
+        margin-bottom: 39px;
+    }
+
+
+
+

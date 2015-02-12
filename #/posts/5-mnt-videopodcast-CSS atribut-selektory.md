@@ -13,7 +13,7 @@ selektorov.
 
 ---
 
-<iframe src="//player.vimeo.com/video/107823151?color=ffffff" width="800" height="500" frameborder="0"
+<iframe src="//player.vimeo.com/video/107823151?color=ffffff" width="1400" height="800" frameborder="0"
 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ---

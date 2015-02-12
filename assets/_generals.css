@@ -1,0 +1,92 @@
+
+
+
+    @import url("//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css");
+    @import url("//fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500&subset=latin,latin-ext");
+    @import url("//fonts.googleapis.com/css?family=Karma:400,500,300,600,700&subset=latin,latin-ext");
+
+
+    ::-moz-selection {
+        background: #FFC6C6;
+    }
+
+    ::selection {
+        background: #FFC6C6;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        text-rendering: optimizeLegibility;
+        font-family: "Karma", "Georgia", "Cambria", "EversonMono", "EversonMono", "Segoe UI Symbol", "Symbola", "Ubuntu", "Arial", serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 29px;
+        color: #000318;
+        overflow-x: hidden;
+    }
+
+    hr {
+        height: 10px;
+        border: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 29px;
+    }
+
+    a {
+        color: #AC1B1B;
+        text-decoration: none;
+    }
+
+    a:hover {
+        transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+
+    i { /* yeah, fuck the italic */
+        font-style: normal;
+        color: #AC1B1B;
+    }
+
+    em {
+        font-style: normal;
+        color: #B5B5B5;
+    }
+
+    pre, code {
+        font-family: "Source Code Pro", dejavu sans mono, amonospace, courier, monospace;
+    }
+
+
+
+
+    /* other containers */
+
+
+    [id="footer"]{
+        margin: 250px 200px 0 140px;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgb(181, 181, 181);
+        padding: 33px 200px 19px 60px;
+    }
+
+    [id="footer"] a {
+        color: rgb(181, 142, 149);
+    }
+
+    [id="header"]{
+        margin: 19px auto 0 180px;
+        padding: 20px;
+    }
