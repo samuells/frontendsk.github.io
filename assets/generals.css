@@ -95,7 +95,6 @@
     }
 
 
-
     [id="header"] a:before {
         content: "/";
         display: inline-block;
@@ -125,4 +124,36 @@
     [id="header"]{
         margin: 19px auto 0 180px;
         padding: 20px;
+    }
+
+
+
+
+/* subscribe */
+
+
+    [id="subscribe"] {
+        margin-bottom: 16px;
+    }
+
+    [id="subscribe"] .mc-field-group,
+    [id="subscribe"] #mc-embedded-subscribe {
+        display: inline-block;
+    }
+
+    [id="subscribe"] #mce-EMAIL {
+        padding: 9px 17px 4px;
+        border: 1px solid transparent;
+        transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        width: 472px;
+        margin-left: -18px;
+        font-size: 16px;
+    }
+
+    [id="subscribe"]:hover #mce-EMAIL {
+        border: 1px solid #EF7863;
+        transition: all 0.2s linear;
+        color: black;
+        -moz-transition: all 0.2s linear;
     }

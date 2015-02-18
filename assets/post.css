@@ -68,32 +68,3 @@
         font-weight: 800;
     }
 
-
-
-
-    [id="subscribe"] {
-        margin-bottom: 72px;
-    }
-
-    [id="subscribe"] .mc-field-group,
-    [id="subscribe"] #mc-embedded-subscribe {
-        display: inline-block;
-    }
-
-    [id="subscribe"] #mce-EMAIL {
-        padding: 3px 20px;
-        border: 2px solid transparent;
-        border-bottom: 2px solid rgb(163, 163, 163);
-        transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
-    }
-
-    [id="subscribe"]:hover #mce-EMAIL {
-        border: 2px solid #EF7863;
-        transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
-    }
-
-
-
-

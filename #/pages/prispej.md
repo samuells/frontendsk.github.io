@@ -34,9 +34,11 @@ Vyber si ako!
 
 ### Niečo iné ohľadom tejto sajty?
 
- - Vytvor issue [GH/issues](https://github.com/frontendsk/frontendsk.github.io/issues),
- - Napíš nám na [@ondrek](https://twitter.com/ondrek),  [@radovan_kuka](https://twitter.com/radovan_kuka),  [@andrejminarik](https://twitter.com/andrejminarik)
+ - Vytvor issue [GH/issues](https://github.com/frontendsk/frontendsk.github.io/issues) a reportni nám otázku/bug
+ - Napíš nám na [@ondrek](https://twitter.com/ondrek),  [@radovan_kuka](https://twitter.com/radovan_kuka)
+   alebo [@andrejminarik](https://twitter.com/andrejminarik)
  - Ak nevieš čo je Git alebo Gulp, asi si rozmysli či chceš písať
+ - Nevieš o čom písať? Máme mrte tém a žiadny čas - len nám napíš
 
 ---
 

@@ -1,13 +1,22 @@
 
 
-
-	Welcome!
-
-
-	This website was made by Gulp, WebStorm and HTML5/CSS3.
-	Is hosted on Github as a repository in github.com/frontendsk.
-	For the website was not used any generator, only Gulp.
-	For more info contact @ondrek on Twitter!
+	Welcome,
 
 
-	Thanks for the visit!
+		… this website was made by Gulp
+		as a static website builder.
+
+		… editor was WebStorm
+		with awesome black theme Tomorrow Night.
+
+		… s a technology, as used HTML5/CSS3
+		because we had any other option, of course…
+
+		… designed by @ondrek
+		inside of Chrome. No Photoshop anymore.
+
+		… hosted on Github
+		because it's for free, keeps history and it's awesome!
+
+
+	Bye.
