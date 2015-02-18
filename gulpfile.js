@@ -35,6 +35,7 @@
 	//
 	var BLOG_BUILD_DEST = "./b/";
 	var POSTS_BUILD_DEST = "./p/";
+	var DRAFTS_BUILD_DEST = "./d/";
 	var INDEX_BUILD_DEST = ".";
 	var TARGET_BLOG = "./#/";
 
@@ -67,7 +68,7 @@
 
 		runSequence(
 			[ "clean-posts", "clean-blogs" ],
-			[ "pages", "posts", "index" ],
+			[ "pages", "posts", "drafts", "index" ],
 		cb);
 
 	});
@@ -131,6 +132,22 @@
 			TARGET_BLOG+"/templates/index.html",
 			INDEX_BUILD_DEST,
 			false
+		);
+
+	});
+
+
+
+	//
+	//
+	//
+	gulp.task("drafts", function(){
+
+		return parseTemplate(
+			TARGET_BLOG+"/drafts/*.md",
+			TARGET_BLOG+"/templates/post.html",
+			DRAFTS_BUILD_DEST,
+			true
 		);
 
 	});

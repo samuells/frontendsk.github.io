@@ -3,3 +3,4 @@ Disallow: /#/
 Disallow: /node_modules/
 Disallow: /media/
 Disallow: /assets/
+Disallow: /d/
