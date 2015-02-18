@@ -29,7 +29,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
-        color: #000318;
+        color: rgb(47,53,73);
         overflow-x: hidden;
     }
 
@@ -44,13 +44,13 @@
     }
 
     a {
+        transition: all 0.1s linear;
         color: #EF7863;
         text-decoration: none;
     }
 
     a:hover {
-        transition: all 0.1s linear;
-        -moz-transition: all 0.1s linear;
+        transition: all 1s linear;
         opacity: 0.7;
         filter: alpha(opacity=70);
     }
@@ -133,7 +133,7 @@
 
 
     [id="subscribe"] {
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
 
     [id="subscribe"] .mc-field-group,

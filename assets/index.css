@@ -20,25 +20,31 @@
         width: 73px;
         float: left;
         margin-right: 37px;
-        opacity: 0.6;
+        opacity: 0.7;
+        border: 1px solid rgb(223, 223, 223);
     }
 
 
     [id="index"][class="main"] time {
         display: block;
-        color: rgb(205, 205, 205);
-        font-size: 14px;
-        font-weight: 300;
+        color: rgb(134, 138, 163);
+        font-size: 13px;
+        font-weight: 600;
         margin-top: 10px;
         margin-bottom: -4px;
     }
 
 
     [id="index"][class="main"] a {
-        display: block;
+        display: inline-block;
         color: rgb(0, 0, 0);
         font-weight: 800;
         font-size: 22px;
+    }
+
+
+    [id="index"][class="main"] a:hover {
+        color: #EF7863;
     }
 
 
