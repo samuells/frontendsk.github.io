@@ -10,8 +10,6 @@ thumbnail : strategy
 V pokračovaní seriálu si ukážeme, čo treba spraviť pred každým Sprintom. Ako urobiť estimation
 jednotlivých User Stories, čo je povinnosťou Product Ownera a čo developerov..
 
-<!-- more -->
-
 ---
 
 **User Stories**
@@ -22,8 +20,6 @@ rozbiť na malé User Stories. Každá z nich musí mať jasný popis a prípadn
 Každá User Story musí byť v časovom rozmedzí od pár hodín do jedného dňa (samozrejme, vytvoriť
 takéto striktné pravidlo je nezmysel a neskôr si poupravujete Scrum do podoby ktorá vám sedí
 najviac). Ak však trvajú User Stories dlhšie ako dva dni, niečo robíte zle.
-
-![](http://bit.ly/1pHYW2D)
 
 V User Story <small>(zjednodušme tento pojem a nazvime teraz User Stories všetko od bugov, features
 až po changes vo funkcionalite systému)</small> musíme jasne popísať problém, aby každý developer
@@ -45,8 +41,6 @@ Product Owner popíše podrobne problém a vytvorí task, aby bol nutný čo naj
 akejkoľvek administrácie či komunikácie. Ak sa zákazník rozhodne, že už nechce skákajúce korytnačky
 [[*]](http://bit.ly/1pHZmWG) na webstránke, môže rovnako z Priority Backlog odstrániť jednotlivé User
 Stories.
-
-![](http://bit.ly/1pHYmSp)
 
 Zjednodušene povedané. Úloha Product Ownera je prijímať všetky podnety na development, aby netravovali
 developerov, a usporiadavať ich v Priority Backlogu. Product Owner nevie povedať, kedy budú hotové

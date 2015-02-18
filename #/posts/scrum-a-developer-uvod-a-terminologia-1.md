@@ -10,8 +10,6 @@ thumbnail : strategy
 Článok je light úvodom do SCRUMu. Seriál bude mať viac častí a je určený pre ľudí, ktorí
 s ním nemajú skúsenosti alebo nikdy o ňom nepočuli a venuje sa terminológiía hlavným myšlienkam ..
 
-<!-- more -->
-
 ---
 
 Poznámka: Naša firma beží na Scrume 2 roky, niečo sme pomenili, nevieme aký je rozdieľ medzi
