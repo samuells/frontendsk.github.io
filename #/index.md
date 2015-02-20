@@ -3,8 +3,7 @@ layout: index
 description: "Nepravideľný magazín o Slovenskom front-end svete, developeroch, designer a startupoch"
 title: Front-End {SK}
 date: 2014/4/27 11:55:25
-category: design a ux
-thumbnail : design
+thumbnail : tools
 ---
 
 Vitaj, priateľu v redesignovanom občasníku o front-ende.
@@ -12,8 +11,12 @@ Okoštuj články:
 
 ---
 
+<img src="/media/thumbnails/tools.png">
+<time>2015/02/20</time>
+[Gulp ako CMS (alebo ako konečne zabiť PHP)](/b/gulp-ako-cms/)
+
 <img src="/media/thumbnails/javascript.png">
-<time>2014/04/27</time>
+<time>2014/09/20</time>
 [NOOP a Javascript](/b/noop-a-javascript/)
 
 <img src="/media/thumbnails/interview.png">
