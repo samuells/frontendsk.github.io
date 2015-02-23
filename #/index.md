@@ -11,7 +11,7 @@ Okoštuj články:
 
 ---
 
-<img src="/media/thumbnails/tools.png">
+<img src="/media/thumbnails/gulp.png">
 <time>2015/02/23</time>
 [O Gulpe ako CMS, smradľavom PHP a geniálnych Rubystoch](/b/gulp-ako-cms/)
 

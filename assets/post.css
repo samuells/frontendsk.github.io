@@ -33,11 +33,16 @@
         color: #EF7863;
         font-size: 14px;
         line-height: 20px;
-        background: rgb(247, 247, 247);
+        background: rgb(244, 244, 244);
         padding: 60px 200px 60px 60px;
         margin: 0 200px 0 140px;
         font-weight: 400;
     }
+
+	[id="post"][class="main"] > pre code {
+		background: transparent;
+		padding: 0;
+	}
 
     [id="post"][class="main"] > ul,
     [id="post"][class="main"] > ol {
