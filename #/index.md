@@ -10,6 +10,11 @@ Vitaj, priateľu v redesignovanom občasníku o front-ende.
 Okoštuj články:
 
 ---
+
+<img src="/media/thumbnails/tools.png">
+<time>2015/02/23</time>
+[O Gulpe ako CMS, smradlavom PHP a geniálnych Rubystoch](/b/gulp-ako-cms/)
+
 <img src="/media/thumbnails/javascript.png">
 <time>2014/09/20</time>
 [NOOP a Javascript](/b/noop-a-javascript/)
