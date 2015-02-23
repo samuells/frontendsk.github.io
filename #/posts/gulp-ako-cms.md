@@ -1,13 +1,13 @@
 ---
 layout: post
 description: "Potrebujeme CMS a všade dávať Wordpress kvôli jednoduchým problémom, na ktoré už dnes máme riešenie?"
-title: O Gulpe ako CMS, smradlavom PHP a geniálnych Rubystoch
+title: O Gulpe ako CMS, smradľavom PHP a geniálnych Rubystoch
 date: 2015/02/20
 thumbnail : tools
 ---
 
 Chyby boli dve. Prvou bolo, že front-end developeri by síce radi písali plnohodnotné weby, ale
-keďže jQuery nekomunikuje[*][6] s databázov, mali smolu, a museli sa naučiť PHP. Druhou bolo, že PHP síce
+keďže jQuery nekomunikuje[*][6] s databázou, mali smolu, a museli sa naučiť PHP. Druhou bolo, že PHP síce
 smrdí, ale naučiť sa ho zle používať nevyžaduje veľa úsilia - a tak sa uchytilo pomerne rýchlo.
 
 Začalo sa to nahradením funkcionality iframov pomocou PHP Include[*][5]. Následný boom Wordpressu
@@ -23,10 +23,10 @@ doskách.
 
 Následný geniálny nápad rozšírila najmä Ruby komunita, keď v 2008 prišli s Jekyllom[*][3]. Niekto si
 povedal, že kvôli tagom, templatom a pagination asi nepotrebujeme obrovskú MySQL databázu plnú reklamy
-na Viagru[*][7], 80-eurový hosting a 75MB Wordpress zdrojákov, ale stačí nám pät skriptov.
+na Viagru[*][7], 80-eurový hosting a 75MB Wordpress zdrojákov, ale stačí nám päť skriptov.
 
 Zrazu sa zistilo, že hosting môžeme nahradiť Githubom[*][8]. Že články písané cez wysiwyg a ukladané
-cez SQL môžu byť jednoduchý markdown súbory. Že na verzionovanie môže slúžiť Git namiesto tabuľky v
+cez SQL môžu byť jednoduché markdown súbory. Že na verzionovanie môže slúžiť Git namiesto tabuľky v
 DB alebo že na jednoduché poslanie emailu stačí REST[*][9] a nepotrebujeme PHP backend.
 
 Samozrejme pre weby na to vhodné.
@@ -38,7 +38,7 @@ Assemble, Blacksmith, Broccoli Taco, Brunch, Cabin, Go-static, Harp Heckle, Hexo
 pretože všetky sú úplne rovnako nahovno)[*][2].
 
 Nakoniec pokračovanie tejto telenovely prišlo iba minulý rok! Internet zaplavila kopa zlých alternatív
-Jekyllu, pretože komunita tých 17 šikovných ľudi sa nesústredila na jednom projekte, ale začali si
+Jekyllu, pretože komunita tých 17 šikovných ľudí sa nesústredila na jednom projekte, ale začali si
 hrabať na vlastnom piesočku. A tak nám vzniklo veľa zbytočných Jekyll alternatív, ktoré vlastne nič
 inovatívne nepriniesli.
 
