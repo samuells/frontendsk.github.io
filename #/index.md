@@ -6,10 +6,15 @@ date: 2014/4/27 11:55:25
 thumbnail : tools
 ---
 
-Vitaj, priateľu v redesignovanom občasníku o front-ende.
+Vitaj, priateľu v redesignovanom občasníku o front-ende.  
 Okoštuj články:
 
 ---
+
+
+<img src="/media/thumbnails/gulp.png">
+<time>2015/03/03</time>
+[Ako vytvoriť jednoduchý blog s Gulpom](/b/gulp-ako-cms-ako/)
 
 <img src="/media/thumbnails/gulp.png">
 <time>2015/02/23</time>

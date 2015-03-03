@@ -9,7 +9,7 @@
     <title>Ako vytvoriť jednoduchý blog s Gulpom</title>
 
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Ako vytvoriť jednoduchý blog bez CMS a len s jedným toolom? Gulp nám prináča odpoveď!" />
+    <meta name="description" content="Ako vytvoriť jednoduchý blog bez CMS a len s jedným toolom? Gulp nám prináša odpoveď!" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -17,12 +17,12 @@
     <meta property="og:title" content="Front-End.sk" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400"/>
-    <meta property="og:description" content="Ako vytvoriť jednoduchý blog bez CMS a len s jedným toolom? Gulp nám prináča odpoveď!" />
+    <meta property="og:description" content="Ako vytvoriť jednoduchý blog bez CMS a len s jedným toolom? Gulp nám prináša odpoveď!" />
 
     <meta name="twitter:title" content="Front-End.sk" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:image" content="https://secure.gravatar.com/avatar/33601a529921d030cc933647845983d1?size=400" />
-    <meta name="twitter:description" content="Ako vytvoriť jednoduchý blog bez CMS a len s jedným toolom? Gulp nám prináča odpoveď!" />
+    <meta name="twitter:description" content="Ako vytvoriť jednoduchý blog bez CMS a len s jedným toolom? Gulp nám prináša odpoveď!" />
 
     <link href="/assets/generals.css?2" rel="stylesheet" type="text/css" />
     <link href="/assets/fonts.css?2" rel="stylesheet" type="text/css" />
@@ -50,52 +50,49 @@
 
         <main id="post" class="main">
             <h1 class="title"><a href="">Ako vytvoriť jednoduchý blog s Gulpom</a></h1>
-            <time class="time">2015-02-19</time>
-            <p>V predošlom <a href="https://frontend.sk/b/gulp-ako-cms/">článku</a> sme si povedali krátku bájku o tom, ako sme v priebehu 15 rokov nahradili
-iframe za 3984 Javascript builderov statických sájt. Keďže prehlasujem že v súčastnosti je Gulp to
-najlepšie čo môžeme použiť na generovanie statického blogu, poďme si ukázať aj &quot;ako&quot;.</p>
-<h2 id="ak-trukt-ru-m-ma-n-blog">Akú štruktúru má mať náš blog</h2>
-<p>To samozrejme záleži od samotného blogu. Pre zjednodušenie si poďme urobiť stránku rovnakú ako táto.
-Potrebujeme teda dve miesta. Prvé, kde budeme mať &quot;raw&quot; súbory - teda markdown file, templaty a ostatné,
-z ktorých bude generované. Druhé, kde budeme mať vygenerované súbory. Potrebujem taktiež folder
-pre CSS v builde a ak chceme použiť preprocesor (ktorý mi nevyužívame tu, ale v príklade bude) taktieť
-tento folder.</p>
-<pre><code>raw/blogs/my_article_1.md
+            <time class="time">2015-03-02</time>
+            <p>V predošlej <a href="/b/gulp-ako-cms/">bájke</a> sme si porozprávali o tom, ako sme sa dostali za posledných pätnásť rokov od
+iframov až po 3984 Javascript builderov static sájt. Keďže prehlasujem, že v súčasnosti je Gulp ten
+top tool, ktorý môžeme použiť - poďme si ukázať ako na to!</p>
+<h2 id="ak-trukt-ru-m-ma-n-blog-">Akú štruktúru má mať náš blog?</h2>
+<p>To samozrejme záleží od samotného blogu. Pre zjednodušenie ale budeme robiť sajtu rovnakú ako táto.
+Potrebujeme dve veci. Miesto na &quot;raw&quot; súbory ako markdowny, templaty a iné z ktorých bude generované …</p>
+<pre><code>raw/blogs/my_article_1.md   « blogy
 raw/blogs/my_article_2.md
 raw/blogs/my_article_3.md
-raw/pages/contact.md
+raw/pages/contact.md   « pages
 raw/pages/about.md
-raw/templates/index.html
+raw/templates/index.html   « templaty
 raw/templates/blog.html
 raw/templates/page.html
 raw/index.md
-</code></pre><p>ale samozrejme musíme vložiť aj bordel súbory ako package.json, humans.txt, robots.txt, readme.md,
-cname pre Github alebo .gitignore. Takže reálne budeme mať:</p>
-<pre><code>raw/…
-blog/…
-index.html
+</code></pre><p>… a potom druhé miesto kam budeme generovať. Plus samozrejme miesto na bordel ako package.json,
+humans.txt, robots.txt, readme.md, CNAME pre Github alebo .gitignore …</p>
+<pre><code>gulpfile.js   « tu skryjeme tasky a spustíme ako &quot;gulp&quot;
+package.json   « tu definujeme packages pre generovanie
+README.md
+raw/…   « odtiaľto budeme generovať
+</code></pre><p>A akú štruktúru bude mať náš vygenerovaný blog?</p>
+<pre><code>about/index.html   « tu sa nám vygenerovala page
+contact/index.html
 gulpfile.js
 package.json
-README.md
-</code></pre><p>akú štruktúru bude mať náíš vygenerovaný blog?</p>
-<pre><code>raw/…
-blog/my_article_1/index.html
+blog/my_article_1/index.html   « tu máme blogy
 blog/my_article_2/index.html
 blog/my_article_3/index.html
-about/index.html
-contact/index.html
-index.html
-</code></pre><p>na akých linkách budeme vidieť články?</p>
+README.md
+raw/…
+index.html  « tu je index, ktorý zbehol cez template
+</code></pre><p>Nakoľko si browser sám doplní cestu k defaultnému menu indexu, nemusíme ho explicitne referencovat,
+a v blogu môžeme ako linky použiť iba nasledujúce URI:</p>
 <pre><code>site.com/blog/my_article_1/
 site.com/blog/my_article_2/
 site.com/blog/my_article_3/
 site.com/about/
 site.com/contact/
 </code></pre><h2 id="ak-gulp-tasky-potrebujeme-">Aké Gulp tasky potrebujeme?</h2>
-<p>Určite vieme povedať, ze budeme potrebovat plugin na markdown, kopírovanie, samotný Gulp, nejaký
-templatovací jazyk, prípadne CSS preprocesor, connect ak chceme aj streamnuť sajtu na localhoste,
-rename plugin a možno nejaký na minifikáciu. Poďme si teda najprv vytvoriť package.json pre príslušné
-pluginy:</p>
+<p>Budeme potrebovať pluginy na markdown, kopírovanie, samotný Gulp, vami preferovaný templatovací
+jazyk, prípadne CSS preprocesor. Ak chceme aj streamovať na localhost, prípadne nejaký Connect.</p>
 <pre><code>{
   &quot;devDependencies&quot;: {
     &quot;gulp&quot;: &quot;^3.8.10&quot;,
@@ -110,8 +107,8 @@ pluginy:</p>
     &quot;run-sequence&quot;: &quot;^1.0.2&quot;
   }
 }
-</code></pre><p>A samozrejme tasky pre Gulp, ktoré napíšeme postupne do gulpfile. Pre poradie použijeme napríklad
-runSequence aby sme sa nemuseli trápiť callbackmi, promismi alebo eventmi:</p>
+</code></pre><p>Plus samotné tasky pre Gulp, ktoré postupne píšeme do gulpfile. Pre poradie môžeme použíť node
+plugin runSequence, aby sme sa vyhli callbackom, promisom a eventom …</p>
 <pre><code>gulp.task(&quot;default&quot;, function(cb){
 
     runSequence(
@@ -122,35 +119,35 @@ runSequence aby sme sa nemuseli trápiť callbackmi, promismi alebo eventmi:</p>
     cb);
 
 });
-</code></pre><p>Teraz poďme na prvý. Chcem vyčistiť staré súbory po starom builde a nahradiť ich novými, ktoré sa
-ideálne budú v niečom líšiť.</p>
+</code></pre><p>Prvý z nich bude odstraňovať staré súbory po poslednom builde, ktoré ideme nahradiť novými …</p>
 <pre><code>gulp.task(&quot;clean_build&quot;, function(cb){
     var rmrf = require(&quot;rimraf&quot;);
     rmrf.sync(&quot;./blog&quot;);
     rmrf.sync(&quot;./about&quot;);
     rmrf.sync(&quot;./contact&quot;);
+    cb();
 });
-</code></pre><p>Teraz chceme prebehnúť všetky markdown súbory cez príslušný template, vybrať z nich front matter
-a uložiť ich na patričnú adresu. Pozrime sa najprv ako vyzerá nás markdown súbor.</p>
+</code></pre><p>Teraz potrebujeme tu naozaj dôležitú časť nášho blogu - a to samotný obsah. Nemusí byť striktne
+písaný v markdowne, ale pre tento príklad je najjednoduchší.</p>
 <pre><code>---
 description: &quot;Toto je krátky description, ktorý môžeme použíť&quot;
 layout: post
 title: Môj super blog title
-date: 2015/02/28
-thumbnail : design
+date: 2015/02/28   « toto môžeme použíť neskôr vnútri blogu
+thumbnail : design   « thumbnail môžeme použíť pre open graph
 ---
 
 Toto je text prvého *super* blog postu!
-</code></pre><p>a ešte jeden pre nejakú page</p>
+</code></pre><p>… a ešte jeden pre nejakú page …</p>
 <pre><code>---
-layout: page
+layout: page   « na základe tohto použíjeme príslušný template
 title: O nás
 description: &quot;Tento text nájdete v meta tagu na podstránke O Nás&quot;
 ---
 
-# Ahoj **priateľia**! Toto je page O Nás!
-</code></pre><p>ako template môžeme použíť napríklad Swig, čo je Jinja-like templatovací engine pre node.js a funguje
-rovnako ako všetky ostatné templatovacie enginy.</p>
+# Ahoj **ľudia**! Toto je page O Nás!
+</code></pre><p>… kde ako template môžeme použiť napríklad Swig, čo je Jinja-like templatovací engine pre node.js a
+funguje úplne rovnako ako všetky ostatné templatovacie enginy.</p>
 <pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;
 
     &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -163,21 +160,21 @@ rovnako ako všetky ostatné templatovacie enginy.</p>
     {% block content %}{% endblock %}
 
 &lt;/body&gt;&lt;/html&gt;
-</code></pre><p>pre takéto krásne templaty a markdown súbory prebehneme custom Gulp task, ktorý nám zoberie všetky
-markdown súbory, vyparsuje nám z nich hlavičku ktorú voláme Front Matter, potom ich zkonverzuje do
+</code></pre><p>Pre takéto krásne templaty a markdown súbory prebehneme custom Gulp task, ktorý nám zoberie všetky
+markdown súbory, vyparsuje nám z nich hlavičku, ktorú voláme Front Matter, potom ich ztemplatuje do
 HTML a nakoniec ich vloží do layoutu v Swigu.</p>
 <pre><code>gulp.task(&quot;parse_blogs&quot;, function(){
 
-    return gulp.src(&quot;./#/posts/*.md&quot;)   // nájdi všetky markdown súbory blog
-        .pipe(frontMatter({property: &quot;page&quot;, remove: true}))   // vyparsuj hlavičky a odstráň ich
-        .pipe(marked())   // zbehňi zvyšok cez markdown parser
-        .pipe(applySwigTemplate(&quot;./#/templates/blog.html&quot;))   // aplikuj template pre blogy
-        .pipe(rename(function(path){   // premenuj z &quot;blog_1.md&quot; na &quot;blog_1/index.html&quot;
+    return gulp.src(&quot;./#/posts/*.md&quot;)   « nájdi všetky markdown súbory blog
+        .pipe(frontMatter({property: &quot;page&quot;, remove: true}))   « vyparsuj hlavičky a odstráň ich
+        .pipe(marked())   « zbehňi zvyšok cez markdown parser
+        .pipe(applySwigTemplate(&quot;./#/templates/blog.html&quot;))   « aplikuj template pre blogy
+        .pipe(rename(function(path){   « premenuj z &quot;blog_1.md&quot; na &quot;blog_1/index.html&quot;
             path.extname = &quot;.html&quot;;
             path.dirname = path.basename;
             path.basename = &quot;index&quot;;
         }))
-        .pipe(gulp.dest(&quot;/blog/&quot;));   // ulož do build foldra
+        .pipe(gulp.dest(&quot;/blog/&quot;));   « ulož do build foldra
 
 });
 
@@ -185,15 +182,21 @@ var applySwigTemplate = function(templateFile){
 
     var tpl = swig.compileFile(path.join(__dirname, templateFile));
 
-    return require(&quot;through2&quot;).obj(function(file, enc, callback){
+    return require(&quot;through2&quot;).obj(function(file, enc, cb){
         var data = { content: file.contents.toString(), page: file.page};
         file.contents = new Buffer(tpl(data), &quot;utf8&quot;);
         this.push(file);
-        callback();
+        cb();
     });
 
 };
 </code></pre><p>Rovnakým štýlom zbehneme aj parser pre posty, nielen blogy.</p>
+<h2 id="kde-m-em-vidie-naozajstn-blog-alebo-pr-klad-">Kde môžem vidieť naozajstný blog alebo príklad?</h2>
+<p>Napríklad si môžem pozrieť <a href="https://www.youtube.com/watch?v=v18asVwyJpg">túto</a> prezentáciu, po ktorej bol napísaný tento článok (slidy boli
+použíté ako podklad). Alebo si môžete pozrieť Github <a href="https://github.com/frontendsk/frontendsk.github.io">repo</a> github/frontendsk na ktorom sídli aj
+táto stránka, ktorá je generovaná cez Gulp. Je však marec 2015, takže ak sem prídete o rok neskôr
+je veľmi pravdepodobné že sa proces zmení a už nebude. Bol by som teda opatrný.</p>
+<hr>
 <p>Autor [<a href="http://twitter.com/ondrek">ondrek</a>].</p>
 
         </main>
