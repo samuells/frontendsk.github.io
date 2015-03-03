@@ -140,7 +140,7 @@ thumbnail : design   « thumbnail môžeme použíť pre open graph
 Toto je text prvého *super* blog postu!
 </code></pre><p>… a ešte jeden pre nejakú page …</p>
 <pre><code>---
-layout: page   « na základe tohto použíjeme príslušný template
+layout: page   « na základe tohto použijeme príslušný template
 title: O nás
 description: &quot;Tento text nájdete v meta tagu na podstránke O Nás&quot;
 ---
@@ -161,13 +161,13 @@ funguje úplne rovnako ako všetky ostatné templatovacie enginy.</p>
 
 &lt;/body&gt;&lt;/html&gt;
 </code></pre><p>Pre takéto krásne templaty a markdown súbory prebehneme custom Gulp task, ktorý nám zoberie všetky
-markdown súbory, vyparsuje nám z nich hlavičku, ktorú voláme Front Matter, potom ich ztemplatuje do
+markdown súbory, vyparsuje nám z nich hlavičku, ktorú voláme Front Matter, potom ich stemplatuje do
 HTML a nakoniec ich vloží do layoutu v Swigu.</p>
 <pre><code>gulp.task(&quot;parse_blogs&quot;, function(){
 
     return gulp.src(&quot;./#/posts/*.md&quot;)   « nájdi všetky markdown súbory blog
         .pipe(frontMatter({property: &quot;page&quot;, remove: true}))   « vyparsuj hlavičky a odstráň ich
-        .pipe(marked())   « zbehňi zvyšok cez markdown parser
+        .pipe(marked())   « zbehni zvyšok cez markdown parser
         .pipe(applySwigTemplate(&quot;./#/templates/blog.html&quot;))   « aplikuj template pre blogy
         .pipe(rename(function(path){   « premenuj z &quot;blog_1.md&quot; na &quot;blog_1/index.html&quot;
             path.extname = &quot;.html&quot;;
@@ -193,9 +193,9 @@ var applySwigTemplate = function(templateFile){
 </code></pre><p>Rovnakým štýlom zbehneme aj parser pre posty, nielen blogy.</p>
 <h2 id="kde-m-em-vidie-naozajstn-blog-alebo-pr-klad-">Kde môžem vidieť naozajstný blog alebo príklad?</h2>
 <p>Napríklad si môžem pozrieť <a href="https://www.youtube.com/watch?v=v18asVwyJpg">túto</a> prezentáciu, po ktorej bol napísaný tento článok (slidy boli
-použíté ako podklad). Alebo si môžete pozrieť Github <a href="https://github.com/frontendsk/frontendsk.github.io">repo</a> github/frontendsk na ktorom sídli aj
-táto stránka, ktorá je generovaná cez Gulp. Je však marec 2015, takže ak sem prídete o rok neskôr
-je veľmi pravdepodobné že sa proces zmení a už nebude. Bol by som teda opatrný.</p>
+použité ako podklad). Alebo si môžete pozrieť Github <a href="https://github.com/frontendsk/frontendsk.github.io">repo</a> github/frontendsk na ktorom sídli aj
+táto stránka, ktorá je generovaná cez Gulp. Je však marec 2015, takže ak sem prídete o rok neskôr,
+je veľmi pravdepodobné, že sa proces zmení a už nebude aktuálny. Bol by som teda opatrný.</p>
 <hr>
 <p>Autor [<a href="http://twitter.com/ondrek">ondrek</a>].</p>
 

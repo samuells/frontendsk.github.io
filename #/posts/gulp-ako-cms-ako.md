@@ -132,7 +132,7 @@ Toto je text prvého *super* blog postu!
 
 ```
 ---
-layout: page   « na základe tohto použíjeme príslušný template
+layout: page   « na základe tohto použijeme príslušný template
 title: O nás
 description: "Tento text nájdete v meta tagu na podstránke O Nás"
 ---
@@ -160,7 +160,7 @@ funguje úplne rovnako ako všetky ostatné templatovacie enginy.
 ```
 
 Pre takéto krásne templaty a markdown súbory prebehneme custom Gulp task, ktorý nám zoberie všetky
-markdown súbory, vyparsuje nám z nich hlavičku, ktorú voláme Front Matter, potom ich ztemplatuje do
+markdown súbory, vyparsuje nám z nich hlavičku, ktorú voláme Front Matter, potom ich stemplatuje do
 HTML a nakoniec ich vloží do layoutu v Swigu.
 
 ```
@@ -168,7 +168,7 @@ gulp.task("parse_blogs", function(){
 
 	return gulp.src("./#/posts/*.md")   « nájdi všetky markdown súbory blog
 		.pipe(frontMatter({property: "page", remove: true}))   « vyparsuj hlavičky a odstráň ich
-		.pipe(marked())   « zbehňi zvyšok cez markdown parser
+		.pipe(marked())   « zbehni zvyšok cez markdown parser
 		.pipe(applySwigTemplate("./#/templates/blog.html"))   « aplikuj template pre blogy
 		.pipe(rename(function(path){   « premenuj z "blog_1.md" na "blog_1/index.html"
 			path.extname = ".html";
@@ -198,9 +198,9 @@ Rovnakým štýlom zbehneme aj parser pre posty, nielen blogy.
 ## Kde môžem vidieť naozajstný blog alebo príklad?
 
 Napríklad si môžem pozrieť [túto][2] prezentáciu, po ktorej bol napísaný tento článok (slidy boli
-použíté ako podklad). Alebo si môžete pozrieť Github [repo][3] github/frontendsk na ktorom sídli aj
-táto stránka, ktorá je generovaná cez Gulp. Je však marec 2015, takže ak sem prídete o rok neskôr
-je veľmi pravdepodobné že sa proces zmení a už nebude. Bol by som teda opatrný.
+použité ako podklad). Alebo si môžete pozrieť Github [repo][3] github/frontendsk na ktorom sídli aj
+táto stránka, ktorá je generovaná cez Gulp. Je však marec 2015, takže ak sem prídete o rok neskôr,
+je veľmi pravdepodobné, že sa proces zmení a už nebude aktuálny. Bol by som teda opatrný.
 
 ---
 
