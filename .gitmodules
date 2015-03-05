@@ -1,6 +1,0 @@
-[submodule "source"]
-	path = source
-	url = https://github.com/frontendsk/articles
-[submodule "themes/theme-v3"]
-	path = themes/theme-v3
-	url = https://github.com/frontendsk/theme-v3
