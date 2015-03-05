@@ -20,8 +20,8 @@
     "through2": "^0.6.3",
     "connect": "^3.3.4",
     "serve-static": "^1.8.1",
-    "rimraf": "*",
-    "run-sequence": "^1.0.2",
+    "gulp-rimraf": "*",
+    "gulp-run-sequence": "^0.3.2",
     "connect-static": "^1.4.0"
   }
 }

@@ -157,3 +157,27 @@
         color: black;
         -moz-transition: all 0.2s linear;
     }
+
+
+/* subscribe */
+
+
+	[id="menu"] {
+		margin-bottom: 8px;
+		background: #EF7863;
+		padding: 13px 23px 6px;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 10;
+	}
+
+
+	[id="menu"] div {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	[id="menu"] a {
+		color: white;
+	}

@@ -1,32 +1,32 @@
 ;(function(){
 
 
+
     "use strict";
 
 
 
 	//
-	//  This gulp files for blog generates my blog
-	//  Copyrights by Samuel Ondrek; 2015
+	//  This is a Gulpfile for Frontend.sk website generating of markdown files;
+	//  All Rights Reversed ;) by Samuel Ondrek in 2015
 	//
 
 
 
 	//
-	//  Requires
+	//  Requires; Note: Try to avoid the Gulp tasks in future
 	//
 	var marked = require("gulp-marked");
     var gulp = require("gulp");
 	var frontMatter = require("gulp-front-matter");
 	var rename = require("gulp-rename");
-	var path = require("path");
 	var swig = require("swig");
 	var through = require("through2");
 	var http = require("http");
 	var serveStatic = require("serve-static");
 	var connect = require("connect");
-	var rimraf = require("rimraf");
-	var runSequence = require("run-sequence");
+	var runSequence = require("gulp-run-sequence");
+	var rimraf = require("gulp-rimraf");
 
 
 
@@ -41,50 +41,17 @@
 
 
 
-	//
-	//
-	//
-	gulp.task("clean-posts", function(cb){
-
-		rimraf(POSTS_BUILD_DEST, cb);
-
-	});
-
 
 
 	//
 	//
 	//
-	gulp.task("clean-blogs", function(cb){
-
-		rimraf(BLOG_BUILD_DEST, cb);
-
-	});
-
-
-
-
 	gulp.task("default", function(cb){
 
 		runSequence(
-			[ "clean-posts", "clean-blogs" ],
+			[ "clean" ],
 			[ "pages", "posts", "drafts", "index" ],
-		cb);
-
-	});
-
-
-
-
-	//
-	//
-	//
-	gulp.task("watch", function(cb){
-
-		runSequence(
-			[ "default" ],
-			[ "watcher" ],
-		cb);
+			cb);
 
 	});
 
@@ -93,13 +60,30 @@
 	//
 	//
 	//
-	gulp.task("watcher", function(){
+	gulp.task("clean", function(cb){
+
+		var toBeRemoved = [
+			POSTS_BUILD_DEST,
+			DRAFTS_BUILD_DEST,
+			BLOG_BUILD_DEST,
+			"./index.html"
+		];
+
+		return gulp.src(toBeRemoved, {read:false}).pipe(rimraf());
+
+	});
+
+
+
+
+	//
+	//  Watch for a change in the target blog (the source of raw files);
+	//
+	gulp.task("watch", function(){
 
 		gulp.watch([TARGET_BLOG+"/**/*"], ["default"]);
 		gulp.watch([TARGET_BLOG+"/*"], ["default"]);
 
-		connect().use(serveStatic(__dirname)).listen(3003);
-
 	});
 
 
@@ -108,7 +92,7 @@
 	//
 	//
 	//
-	gulp.task("pages", function(){
+	gulp.task("pages", function(cb){
 
 		return parseTemplate(
 			TARGET_BLOG+"/pages/*.md",
@@ -195,7 +179,9 @@
 	//
 	var applyTemplate = function(templateFile){
 
-		var tpl = swig.compileFile(path.join(__dirname, templateFile));
+
+		var templateWithoutFirstDot = templateFile.substr(1);
+		var tpl = swig.compileFile(__dirname + templateWithoutFirstDot);
 		var site = require(TARGET_BLOG + "/site.json");
 		site.time = +new Date();
 
