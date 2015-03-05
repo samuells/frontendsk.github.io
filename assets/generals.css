@@ -29,8 +29,9 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
-        color: rgb(47,53,73);
+        color: #262935;
         overflow-x: hidden;
+		margin-top: 200px;
     }
 
     hr {
@@ -81,17 +82,21 @@
 
 /* other containers */
 
+	[id="header"]{
+		padding: 160px 40px 56px 200px;
+		background: #262935;
+		position: absolute;
+		width: 100%;
+		z-index: 20;
+		left: 0;
+		top: 0;
+		color: white;
+		font-size: 30px;
+		font-weight: 800;
+	}
+
     [id="header"] a {
-        display: inline-block;
-        color: rgb(0, 0, 0);
-        font-weight: 800;
-        font-size: 24px;
-        margin-right: 3px;
-    }
-
-
-    [id="header"] [id="logo"] {
-        color: #EF7863;
+		color: white;
     }
 
 
@@ -119,11 +124,6 @@
 
     [id="footer"] a {
         color: #EF7863;
-    }
-
-    [id="header"]{
-        margin: 19px auto 0 180px;
-        padding: 20px;
     }
 
 
@@ -163,21 +163,25 @@
 
 
 	[id="menu"] {
-		margin-bottom: 8px;
 		background: #EF7863;
-		padding: 13px 23px 6px;
 		position: fixed;
 		width: 100%;
 		top: 0;
 		z-index: 10;
+		border-bottom: 3px solid rgba(255, 255, 255, 1);
 	}
 
 
 	[id="menu"] div {
-		max-width: 1200px;
-		margin: 0 auto;
+		padding: 13px 0px 6px;
+		margin: 0 0 0 200px;
 	}
 
 	[id="menu"] a {
 		color: white;
+		margin-right: 22px;
+	}
+
+	[id="menu"] a:hover {
+		color: black;
 	}
