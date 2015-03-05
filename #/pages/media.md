@@ -18,7 +18,7 @@ Naše farbičky:
 
 <div style="background: #FEFFCC;
             padding: 35px 35px 30px;
-            color: white;
+            color: #262935;
             margin-bottom: 10px;">naša žltá; #FEFFCC</div>
 
 :)
