@@ -6,38 +6,31 @@ date: 2015/03/16
 thumbnail : life
 ---
 
-Ako sme sa so známymi rozprávali o absurdnostiach, dostali sme sa k historke z môjho súkromého
-života. Písal som rok 2002 a ja som ako mladý fagan išiel susede preinštalovať Windows XP…
+Ako sme sa tak so známymi rozprávali o absurdnostiach, dostali sme sa k mojej historke z 2003.
+Písal sa rok, kedy vládol XP a ja ako mladý chalan som išiel preinštalovať nejakej tete z dvora
+Windows, lebo vraj je pomalý …
 
 ---
 
-… čo vtedy samozrejme nebolo vôbec jednoduché. Internet bol vtedy ešte malý a relatívne drahý,
-dostávali ste tento knowledge väčšinou ústnym podaním, museli ste vedieť čo je BIOS, mať bootovaciu
-**disketu** a napálené CD cracknuté v dobe, keď neboli torrenty.
+… čo však v tých časoch nebolo vôbec jednoduché. Internet bol relatívne mladý a drahý, knowledge
+sa predával ústne, museli ste vlastni bootovaciu disketu a napálený OS (pred dobou, kedy existoval
+torrent).
 
-Teta sa mi sťažovala, že má pomalý počítač a chce ho preinštalovať. Tak sa jej pýtam, či môžem zformátovať
-disk a nahodiť jej to tam nanovo. Ona mi odpovedá, že "Áno". Ja som však šípil niečo, a tak sa pýtam
-znova, a tentokrát som zdôraznil, vymažem celé céčko a všetko zmizne. Opäť mi hovorí, že "**Jasné**". Tak
-reku asi nie je retardovaná, predsa len bola dospelák a ja zasran.
+Pýtam sa tety z dvora, že či jej to môžem celé zformátovať a nahodiť nanovo. Odpovedá, že "Áno". Ja
+som však šípil nejakú hlúposť a tak sa vysvetlujem druhýkrát že to zmaže celé céčko a všetko zmizne.
+Hovorí, že "Jasné" tak reku nie je retardovaná a idem na to. Koniec koncov som len zasran.
 
-<br/>
-![WTF picture](https://cdn.rawgit.com/frontendsk/resources/master/2015_wtf.gif)
+---
 
-<br/>
+O hodinku ju púšťam k fungl novému OS, nech si vyskúša, pomení ikonky, pozadie a iné úchylky a ona
+na mna pozerá polozmäteným pohľadom a pýta sa ma **"Kde mám priečinok Fotky?"**? Do mna samozrejme
+nervy, lebo už som vedel koľká bije. Vysvetlujem, že je to zmazané a ona mi vysvetluje že mi asi
+nerozumela s tým formátovať. Nečakane.
 
-O hodinku ju púštať k fungl novému systému, nech si vyskúša či nechce zmeniť pozadie alebo prehodiť
-ikonky alebo iné úchyláčiny. A takým polozmeteným a poloretardovaným pohľadom sa na mňa pozerá, a pýta
-sa ma "Kde mám priečinok Fotky?".
+Pýtam sa teda, či nemá nejaký backup, u rodiny, syna alebo stlále vo foťáku a ona mi začne hovoriť,
+tú najabsurdnejšiu story akú som dovtedy počul:
 
-Do mňa nervy samozrejme. Už som vedel koľká bije. Vysvetlujem že je to zmazané a ona mi odpovedá, že
-sme sa asi nerozumeli. No asi nie, do riti. Vo mne krv vrie, a ona mi vysvetluje že nerozumela čo je to
-to "formátovať". Nečakane.
-
-Pýtam sa teda, či boli fotky backupnuté. Že nie. Tak reku či nemá kópiu syn alebo niekto z rodiny
-alebo či ich nemá ešte vo foťáku. A že nie. Zisťujem či tam bolo niečo cenné a ona mi začne hovoriť tú
-najabsurdnejšiu historku:
-
-**"Moja mamina sa nechcela nikdy fotiť a následne keď zomrela v 1998, tak sme zobrali s manželom foťák,
+**"Moja mamina sa nechcela nikdy fotiť a následne keď zomrela v 2001, tak sme zobrali s manželom foťák,
 a v truhle sme ju raz odfotili. A to bola naša jediná kópia na ktorej sme ju mali."**
 
 ---
@@ -46,13 +39,27 @@ a v truhle sme ju raz odfotili. A to bola naša jediná kópia na ktorej sme ju 
 
 ---
 
-**Poučenie však ostalo jasné.** Ľudia klamú že rozumejú a chápu aby nevyzerali ako blbci. Pokiaľ ste v
-pracovnom styku nebodaj, tak táto tendencia je ešte silnejšia. Nikto nechce vyzerať hlúpy a každý občas
-predstiera, že rozumie. Či už z lenivosti alebo strachu. Avšak pokiaľ sa to nenaučíte rozoznávať, určite
-sa vám to skôr či neskôr vráti.
+**Poučenie však ostáva jasné.** Ľudia sa boja vyzerať hlúpi. Často klamú a predstieraju že rozumejú
+a to môže byť častokrát nebezpečné nie len v pracovnom prostredí. Nikto nechce vyzerať hlúpy, vy sa
+však musíte naučiť rozlíšiť, kedy je porozumenie len predstierané.
 
-A aby to bola bájka spomeniem nejakého zajaca. Zajac.
+A aby to bola bájka spomeniem nejakého zajaca - Zajac.
 
 ---
 
-Autor: [[ondrek](https://twitter.com/ondrek)].
+---
+
+
+
+
+<p>
+	<img style="display: block;
+                  max-width: 52px;
+                  float: left;" src="http://bit.ly/1Eq2TeH" alt="samuel ondrek avatar" />
+	<span style="float: left;
+                   display: block;
+                   padding-left: 16px;">
+		Autor článku je **Samuel Ondrek**,<br/>
+		nájdi jeho [twitter](https://twitter.com/ondrek) and [github](https://github.com/ondrek).
+	</span>
+</p>

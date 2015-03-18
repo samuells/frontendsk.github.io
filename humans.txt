@@ -3,19 +3,19 @@
 	Welcome,
 
 
-		… this website was made by Gulp
-		as a static website builder.
+		… this website was made by Gulp, the static generator,
+		that was used as a static website builder.
 
 		… editor was WebStorm
 		with awesome black theme Tomorrow Night.
 
 		… s a technology, as used HTML5/CSS3
-		because we had any other option, of course…
+		because we don't have so many clever options, right? ;)
 
 		… designed by @ondrek
-		inside of Chrome. No Photoshop anymore.
+		inside of Chrome. No expensive Adobe products anymore.
 
-		… hosted on Github
+		… hosted by Github Pages
 		because it's for free, keeps history and it's awesome!
 
 
