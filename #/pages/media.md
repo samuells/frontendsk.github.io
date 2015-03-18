@@ -24,4 +24,15 @@ Naše farbičky:
             margin-bottom: 10px;
             border: 1px solid #262935; ">naša žltá; #FEFFCC</div>
 
-:)
+---
+
+Naše logo:
+
+<img style="max-width: 600px; display: block;"
+         src="/media/logos/logo.png"
+         alt="Our logo as a PSD file" />
+
+Stiahni si ako:
+**[JPG](/media/logos/logo.jpg)**,
+**[PNG](/media/logos/logo.png)** alebo
+**[PSD](/media/logos/logo.psd)**.
