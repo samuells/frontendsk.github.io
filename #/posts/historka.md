@@ -16,18 +16,18 @@ Windows, lebo vraj je pomalý …
 sa predával ústne, museli ste vlastni bootovaciu disketu a napálený OS (pred dobou, kedy existoval
 torrent).
 
-Pýtam sa tety z dvora, že či jej to môžem celé zformátovať a nahodiť nanovo. Odpovedá, že "Áno". Ja
-som však šípil nejakú hlúposť a tak sa vysvetlujem druhýkrát že to zmaže celé céčko a všetko zmizne.
+Pýtam sa tety z dvora, že či jej to môžem celé sformátovať a nahodiť nanovo. Odpovedá, že "Áno". Ja
+som však šípil nejakú hlúposť a tak sa vysvetľujem druhýkrát že to zmaže celé céčko a všetko zmizne.
 Hovorí, že "Jasné" tak reku nie je retardovaná a idem na to. Koniec koncov som len zasran.
 
 ---
 
 O hodinku ju púšťam k fungl novému OS, nech si vyskúša, pomení ikonky, pozadie a iné úchylky a ona
-na mna pozerá polozmäteným pohľadom a pýta sa ma **"Kde mám priečinok Fotky?"**? Do mna samozrejme
-nervy, lebo už som vedel koľká bije. Vysvetlujem, že je to zmazané a ona mi vysvetluje že mi asi
+na mňa pozerá polozmäteným pohľadom a pýta sa ma **"Kde mám priečinok Fotky?"**? Do mňa samozrejme
+nervy, lebo už som vedel koľká bije. Vysvetľujem, že je to zmazané a ona mi vysvetľuje že mi asi
 nerozumela s tým formátovať. Nečakane.
 
-Pýtam sa teda, či nemá nejaký backup, u rodiny, syna alebo stlále vo foťáku a ona mi začne hovoriť,
+Pýtam sa teda, či nemá nejaký backup, u rodiny, syna alebo stále vo foťáku a ona mi začne hovoriť,
 tú najabsurdnejšiu story akú som dovtedy počul:
 
 **"Moja mamina sa nechcela nikdy fotiť a následne keď zomrela v 2001, tak sme zobrali s manželom foťák,
@@ -39,7 +39,7 @@ a v truhle sme ju raz odfotili. A to bola naša jediná kópia na ktorej sme ju 
 
 ---
 
-**Poučenie však ostáva jasné.** Ľudia sa boja vyzerať hlúpi. Často klamú a predstieraju že rozumejú
+**Poučenie však ostáva jasné.** Ľudia sa boja vyzerať hlúpi. Často klamú a predstierajú že rozumejú
 a to môže byť častokrát nebezpečné nie len v pracovnom prostredí. Nikto nechce vyzerať hlúpy, vy sa
 však musíte naučiť rozlíšiť, kedy je porozumenie len predstierané.
 
