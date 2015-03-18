@@ -15,7 +15,7 @@ Okoštuj články:
 
 <img src="/media/thumbnails/life.jpg">
 <time>2015/03/16</time>
-[IT bájka o ľudskej hlúposti](/b/historka/)
+[IT bájka o ľudskej hlúposti](/b/balada/)
 
 <img src="/media/thumbnails/gulp.png">
 <time>2015/03/03</time>
