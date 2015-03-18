@@ -50,7 +50,19 @@ A aby to bola bájka spomeniem nejakého zajaca - Zajac.
 ---
 
 
+<p>
+	<img style="display: block;
+                  max-width: 52px;
+                  float: left;" src="/media/images/reddit.png" alt="reddit komentáre" />
+	<span style="float: left;
+                   display: block;
+                   padding-left: 16px;">
+		Chcete komentovať? môžete,<br/>
+		na úzasnom Reddite už onedlho!
+	</span>
+</p>
 
+---
 
 <p>
 	<img style="display: block;
