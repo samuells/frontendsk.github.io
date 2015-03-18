@@ -1,0 +1,41 @@
+
+
+	@media (max-width: 1000px){
+
+		/*
+			anything under 1000px
+		*/
+
+
+		[id="index"][class="main"] {
+			margin-left: 50px;
+		}
+
+		[id="header"] {
+			padding-left: 50px;
+		}
+
+		[id="footer"] {
+			margin-left: 50px;
+		}
+
+
+	}
+
+
+	@media (max-width: 870px){
+
+		/*
+			tablets and mobiles
+		*/
+
+
+		[id="footer-copyright"] {
+			display: block;
+		}
+
+		[id="subscribe"] {
+			display: none;
+		}
+
+	}

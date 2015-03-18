@@ -6,11 +6,16 @@ date: 2014/4/27 11:55:25
 thumbnail : tools
 ---
 
-Vitaj, priateľu v redesignovanom občasníku o front-ende.  
+Vitaj, priateľu v redesignovanom občasníku o front-ende.
 Okoštuj články:
 
 ---
 
+
+
+<img src="/media/thumbnails/life.jpg">
+<time>2015/03/16</time>
+[IT bájka o ľudskej hlúposti](/b/historka/)
 
 <img src="/media/thumbnails/gulp.png">
 <time>2015/03/03</time>

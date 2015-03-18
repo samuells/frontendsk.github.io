@@ -2,7 +2,6 @@
 
 
     @import url("//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css");
-    @import url("//fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500&subset=latin,latin-ext");
 
 
     ::-moz-selection {
@@ -67,7 +66,7 @@
     }
 
     pre, code {
-        font-family: "MonacoRegular", "Source Code Pro", dejavu sans mono, amonospace, courier, monospace;
+        font-family: "Source Code Pro", "dejavu sans mono", "amonospace", "courier", "monospace";
     }
 
 
@@ -115,11 +114,11 @@
 
 
     [id="footer"]{
-        margin: 250px 200px 0 140px;
-        font-size: 16px;
-        line-height: 20px;
-        color: rgb(181, 181, 181);
-        padding: 33px 200px 19px 60px;
+		margin: 250px 0 0 200px;
+		font-size: 16px;
+		line-height: 20px;
+		color: rgb(181, 181, 181);
+		padding: 33px 0 19px 0;
     }
 
     [id="footer"] a {
@@ -185,3 +184,20 @@
 	[id="menu"] a:hover {
 		color: black;
 	}
+
+
+	/* copyright */
+
+
+	[id="footer-copyright"]{
+
+
+
+	}
+
+
+
+
+
+
+
