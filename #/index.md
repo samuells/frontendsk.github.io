@@ -31,7 +31,7 @@ Okoštuj články:
 
 <img src="/media/thumbnails/interview.png">
 <time>2014/09/03</time>
-[Lukás Majzlan - Top Slovenský dizajn z malého mesta](/b/lukas-majzlan-top-slovensky-dizajn-z-maleho-mesta/)
+[Lukás Majzlan - Top Slovenský dizajn z malého mesta](/b/rozhovor-lukas-majzlan/)
 
 <img src="/media/thumbnails/tools.png">
 <time>2014/07/14</time>
@@ -39,11 +39,11 @@ Okoštuj články:
 
 <img src="/media/thumbnails/strategy.png">
 <time>2014/07/18</time>
-[Scrum a Developer - Pred (prvým) Sprintom (2/5))](/b/scrum-a-developer-uvod-a-terminologia-2/)
+[Scrum a Developer - Pred (prvým) Sprintom (2/5))](/b/scrum-2/)
 
 <img src="/media/thumbnails/strategy.png">
 <time>2014/07/17</time>
-[Scrum a developer - Úvod a terminológia (1/5)](/b/scrum-a-developer-uvod-a-terminologia-1/)
+[Scrum a developer - Úvod a terminológia (1/5)](/b/scrum-1/)
 
 <img src="/media/thumbnails/security.png">
 <time>2014/07/13</time>
@@ -51,7 +51,7 @@ Okoštuj články:
 
 <img src="/media/thumbnails/javascript.png">
 <time>2014/07/04</time>
-[Javascript pre profíkov, alebo ako na Google Closure (2/4)](/b/javascript-pre-profikov-ako-na-google-closure-2/)
+[Javascript pre profíkov, alebo ako na Google Closure (2/4)](/b/closure-2/)
 
 <img src="/media/thumbnails/calendar.png">
 <time>2014/07/02</time>
@@ -59,15 +59,15 @@ Okoštuj články:
 
 <img src="/media/thumbnails/javascript.png">
 <time>2014/05/08</time>
-[Javascript pre profíkov, alebo ako na Google Closure (1/4)](/b/javascript-pre-profikov-ako-na-google-closure-1/)
+[Javascript pre profíkov, alebo ako na Google Closure (1/4)](/b/closure-1/)
 
 <img src="/media/thumbnails/calendar.png">
 <time>2014/05/05</time>
-[Májová súťaž o pozvánku do Dribbble](/b/majova-sutaz-o-pozvanku-do-dribbble/)
+[Májová súťaž o pozvánku do Dribbble](/b/dribble-pozvanka/)
 
 <img src="/media/thumbnails/interview.png">
 <time>2014/05/02</time>
-[Rozhovor o HR, recrutingu a Google s Jánom Rosom](/b/rozhovor-o-hr-recruitingu-a-google-s-janom-rosom/)
+[Rozhovor o HR, recrutingu a Google s Jánom Rosom](/b/rozhovor-jan-rosa/)
 
 <img src="/media/thumbnails/calendar.png">
 <time>2014/04/28</time>
