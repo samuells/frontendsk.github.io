@@ -13,7 +13,7 @@ Windows, lebo vraj je pomalý …
 ---
 
 … čo však v tých časoch nebolo vôbec jednoduché. Internet bol relatívne mladý a drahý, knowledge
-sa predával ústne, museli ste vlastni bootovaciu disketu a napálený OS (pred dobou, kedy existoval
+sa predával ústne, museli ste vlastniť bootovaciu disketu a napálený OS (pred dobou, kedy existoval
 torrent).
 
 Pýtam sa tety z dvora, že či jej to môžem celé sformátovať a nahodiť nanovo. Odpovedá, že "Áno". Ja
