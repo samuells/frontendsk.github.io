@@ -11,7 +11,9 @@ Okoštuj články:
 
 ---
 
-
+<img src="/media/thumbnails/ux.png">
+<time>2015/03/28</time>
+[Knižnica začínajúceho UX dizajnéra](/b/kniznica-zacinajuceho-ux-dizajnera/)
 
 <img src="/media/thumbnails/life.jpg">
 <time>2015/03/16</time>
